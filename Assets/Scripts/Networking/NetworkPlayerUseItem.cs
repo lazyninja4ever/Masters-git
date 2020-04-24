@@ -23,7 +23,7 @@ public class NetworkPlayerUseItem : NetworkBehaviour
                 if (itemId != null && !itemId.hasAuthority) {
                     if (CheckHands()) {
                         int hand = GetHand();
-                        
+                        itemId.gameObject.GetComponent<AudioSource>().Play();
                         CmdClientRequest(itemId);
                         
                         CmdInvokeSetup(usedItem, hand);

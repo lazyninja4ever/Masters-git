@@ -9,8 +9,8 @@ public class NetworkReceiverItem : NetworkDependant
 
     public override void CheckInteraction(GameObject item) {
         if (!isServer) return;
+        receiverSound.Play();
         if (item.GetComponent<NetworkInteraction>().solutionNmbr == solutionItem) {
-            receiverSound.Play();
             isSolved = true;
         }
 

@@ -12,6 +12,7 @@ public class hindPriceReveiler : NetworkReveiler
 
     public Animator stairAnimation;
     public AudioSource stairMovement;
+    public AudioSource priceReveal;
 
     public override void ReveilPrice() {
         base.ReveilPrice();
@@ -29,6 +30,19 @@ public class hindPriceReveiler : NetworkReveiler
     void RpcOpenChest() {
         stairAnimation.Play("stairMove");
         stairMovement.Play();
+
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+        foreach (GameObject player in players) {
+            if (player.gameObject.GetComponent<NetworkIdentity>().isLocalPlayer) {
+
+                player.GetComponent<PlayerMovement>().EnableText("Puzzle Solved", "");
+                player.GetComponent<PlayerMovement>().Invoke("DisableText", 2.5f);
+
+
+            }
+        } priceReveal.Play();
+
         //stair.transform.localPosition = newPosition;
 
     }
