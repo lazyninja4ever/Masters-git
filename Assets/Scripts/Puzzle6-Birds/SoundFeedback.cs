@@ -5,18 +5,16 @@ using Mirror;
 
 public class SoundFeedback : NetworkBehaviour
 {
-    public GameObject[] feedbackLightsL;
-    public GameObject[] feedbackLightsR;
+    public GameObject[] feedbackLights;
     public bool lightOne;
     public int nextLight = 0;
 
 
     private void Start()
     {
-        for(int i = 0; i < feedbackLightsL.Length; i++)
+        for(int i = 0; i < feedbackLights.Length; i++)
         {
-            feedbackLightsL[i].SetActive(false);
-            feedbackLightsR[i].SetActive(false);
+            feedbackLights[i].SetActive(false);
         }
     }
     // Update is called once per frame
@@ -24,8 +22,7 @@ public class SoundFeedback : NetworkBehaviour
     {
         if(lightOne == true)
         {
-            feedbackLightsL[nextLight].SetActive(true);
-            feedbackLightsR[nextLight].SetActive(true);
+            feedbackLights[nextLight].SetActive(true);
             nextLight++;
             lightOne = false;
 
@@ -34,11 +31,10 @@ public class SoundFeedback : NetworkBehaviour
 
     public void removeLight()
     {
-        for(int i = 0; i < feedbackLightsL.Length; i++)
+        for(int i = 0; i < feedbackLights.Length; i++)
         {
             nextLight = 0;
-            feedbackLightsL[i].SetActive(false);
-            feedbackLightsR[i].SetActive(false);
+            feedbackLights[i].SetActive(false);
         }
     }
 }

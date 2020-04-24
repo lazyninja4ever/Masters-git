@@ -9,6 +9,7 @@ public class BowPickUp : NetworkCollectible
     public Transform player;
     public Transform cameraObj;
     public GameObject thisObject;
+    public AudioSource bowSound;
     // Update is called once per frame
 
     void Update()
@@ -16,7 +17,7 @@ public class BowPickUp : NetworkCollectible
         if (itemHeld == true)
         {
             player = this.transform.root;
-            cameraObj = player.Find("PlayerCamera (1)");
+            cameraObj = player.Find("CameraParent").Find("PlayerCamera (1)");
             bow = cameraObj.Find("Bow");
 
             bow.GetComponent<BowState>().hasBow = true;

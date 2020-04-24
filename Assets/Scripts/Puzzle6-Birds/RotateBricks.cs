@@ -14,7 +14,6 @@ public class RotateBricks : NetworkInteraction
         {
             RpcRunRotate(90);
         }
-        
     }
 
     public IEnumerator Rotate( Vector3 axis, float angle, float duration = 1.0f)
