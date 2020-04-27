@@ -163,6 +163,7 @@ public class NetworkPlayerUseItem : NetworkBehaviour
             usNI.isInItem = false;
             usNI.holderItem.GetComponent<NetworkDependant>().isOccupied = false;
             usNI.holderItem.GetComponent<NetworkDependant>().isSolved = false;
+            usNI.holderItem.GetComponent<NetworkDependant>().heldItem = null;
             usNI.holderItem = null;
         }
         

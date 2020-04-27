@@ -19,6 +19,7 @@ public class NetworkInteraction : NetworkBehaviour //changed from monobehaviour
     public float pickupOffsetX;
     public float pickupOffsetY;
     public float pickupOffsetZ;
+    public int clueSize;
 
 
     public virtual void InterActionFuntion(GameObject player) {

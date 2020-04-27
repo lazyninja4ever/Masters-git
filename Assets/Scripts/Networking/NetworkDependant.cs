@@ -9,6 +9,7 @@ public class NetworkDependant : NetworkBehaviour
     public bool isOccupied = false;
     public int solutionItem;
     public string interactMsg = "place item";
+    public GameObject heldItem;
 
     public NetworkSolutionChecker solutionChecker;
 
