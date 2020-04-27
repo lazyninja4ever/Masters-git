@@ -286,7 +286,7 @@ MonoBehaviour:
   solutionItems:
   - {fileID: 1713778421}
   - {fileID: 1272362087}
-  solvedRun: {fileID: 0}
+  solvedRun: {fileID: 18917802}
 --- !u!114 &18917801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,9 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  chestLid: {fileID: 0}
-  keyItem: {fileID: 0}
-  fence: {fileID: 0}
+  fence: {fileID: 2052497344}
   hasReveiled: 0
 --- !u!4 &21919851 stripped
 Transform:
@@ -6544,7 +6542,7 @@ MonoBehaviour:
   isOccupied: 0
   solutionItem: 8
   interactMsg: place item
-  solutionChecker: {fileID: 271608835}
+  solutionChecker: {fileID: 18917800}
   receiverSound: {fileID: 1272362092}
 --- !u!64 &1272362091
 MeshCollider:
@@ -11296,7 +11294,7 @@ MonoBehaviour:
   isOccupied: 0
   solutionItem: 7
   interactMsg: place item
-  solutionChecker: {fileID: 271608835}
+  solutionChecker: {fileID: 18917800}
   receiverSound: {fileID: 1713778426}
 --- !u!64 &1713778425
 MeshCollider:
