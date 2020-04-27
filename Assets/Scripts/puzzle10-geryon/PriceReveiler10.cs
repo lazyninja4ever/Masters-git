@@ -7,6 +7,11 @@ public class PriceReveiler10 : NetworkReveiler
 {
     public GameObject chestLid;
     public GameObject keyItem;
+    public AudioSource priceReveal;
+    public ParticleSystem revealParticles;
+    public Animator chestLidAnim;
+    public AudioSource chestLidSound;
+
     public bool hasReveiled = false;
 
     public override void ReveilPrice() {
@@ -23,8 +28,24 @@ public class PriceReveiler10 : NetworkReveiler
 
     [ClientRpc]
     void RpcOpenChest() {
-        chestLid.transform.localPosition = new Vector3(0.55f, -0.2f, -0.6f);
-        chestLid.transform.localRotation = Quaternion.Euler(-161.55f, 0f, 0f);
+        priceReveal.Play();
+        chestLidSound.Play();
+        chestLidAnim.Play("chestLid");
+        revealParticles.Play();
+
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+        foreach (GameObject player in players) {
+            if (player.gameObject.GetComponent<NetworkIdentity>().isLocalPlayer) {
+
+                player.GetComponent<PlayerMovement>().EnableText("Puzzle Solved", "");
+                player.GetComponent<PlayerMovement>().Invoke("DisableText", 2.5f);
+
+
+            }
+        }
+
+
     }
 
 }

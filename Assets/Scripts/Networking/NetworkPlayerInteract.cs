@@ -102,7 +102,6 @@ public class NetworkPlayerInteract : MonoBehaviour {
     }
 
     public void InteractionActive(string msg) {
-        Debug.Log("showed text");
         showText.text = msg;
         showText.enabled = true;
         //crosshair.enabled = false;
