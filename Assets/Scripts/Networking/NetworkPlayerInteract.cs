@@ -42,7 +42,7 @@ public class NetworkPlayerInteract : MonoBehaviour {
             //fill in the raycast object 
             raycastedObj = hit.collider.gameObject;
             string msg = raycastedObj.GetComponent<NetworkDependant>().interactMsg;
-            if (hasLooked == false)
+            //if (hasLooked == false)
             InteractionActive(msg);
 
             Vector3 namePos = Camera.main.WorldToScreenPoint(raycastedObj.transform.position);
@@ -54,7 +54,7 @@ public class NetworkPlayerInteract : MonoBehaviour {
             raycastedObj = hit.collider.gameObject;
             string msg = raycastedObj.GetComponent<NetworkInteraction>().InteractMsg;
 
-            if (hasLooked == false)
+            //if (hasLooked == false)
                 InteractionActive(msg);
             Vector3 namePos = Camera.main.WorldToScreenPoint(raycastedObj.transform.position);
             showText.transform.position = namePos;

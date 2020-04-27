@@ -316,7 +316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  fence: {fileID: 2052497344}
+  fenceAnim: {fileID: 2052497347}
+  fenceSound: {fileID: 2052497346}
   hasReveiled: 0
 --- !u!4 &21919851 stripped
 Transform:
@@ -13712,7 +13713,6 @@ GameObject:
   - component: {fileID: 2052497345}
   - component: {fileID: 2052497350}
   - component: {fileID: 2052497349}
-  - component: {fileID: 2052497348}
   - component: {fileID: 2052497347}
   - component: {fileID: 2052497346}
   m_Layer: 0
@@ -13870,22 +13870,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2052497348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052497344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a663133bee4baa14593344a4fb779863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  fenceSound: {fileID: 2052497346}
-  fenceAnim: {fileID: 2052497347}
 --- !u!114 &2052497349
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,7 +5,8 @@ using Mirror;
 
 public class p10scaffRevealer : NetworkReveiler
 {
-    public GameObject fence;
+    public Animator fenceAnim;
+    public AudioSource fenceSound;
     public bool hasReveiled = false;
 
     public override void ReveilPrice() {
@@ -21,6 +22,7 @@ public class p10scaffRevealer : NetworkReveiler
 
     [ClientRpc]
     void RpcOpenChest() {
-        fence.GetComponent<showWithAnim>().ShowObject();
+        fenceAnim.Play("fenceHide");
+        fenceSound.Play();
     }
 }
