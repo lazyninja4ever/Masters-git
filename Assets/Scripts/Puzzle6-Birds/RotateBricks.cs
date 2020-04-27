@@ -6,6 +6,10 @@ using Mirror;
 public class RotateBricks : NetworkInteraction
 {
     public bool isRotating;
+    public int currentAngle = 0;
+    public SolutionMusic solutionScript;
+    public AudioSource brickSound;
+    
     public override void InterActionFuntion(GameObject player)
     {
         if (!isServer) return;
@@ -13,12 +17,15 @@ public class RotateBricks : NetworkInteraction
         if(isRotating == false)
         {
             RpcRunRotate(90);
+            solutionScript.Invoke("RpcCheckboard", 1f);
         }
+       
     }
 
     public IEnumerator Rotate( Vector3 axis, float angle, float duration = 1.0f)
     {
         isRotating = true;
+        brickSound.Play();
         Quaternion from = transform.rotation;
         Quaternion to = transform.rotation;
         to *= Quaternion.Euler(axis.x, axis.y, angle);
@@ -31,7 +38,13 @@ public class RotateBricks : NetworkInteraction
             yield return null;
         }
         transform.rotation = to;
+        currentAngle++;
         isRotating = false;
+
+        if(currentAngle == 4)
+        {
+            currentAngle = 0;
+        }
     }
 
     [ClientRpc]

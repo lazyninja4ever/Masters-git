@@ -12,6 +12,9 @@ public class SolutionBirds : NetworkBehaviour
     public int birdsCount;
     public bool hasIncreased = false;
     public GameObject[] players;
+    public AudioSource lidOff;
+    public AudioSource reveilPriceSound;
+    public ParticleSystem particleReveil;
 
     // Update is called once per frame
     void Update()
@@ -51,9 +54,12 @@ public class SolutionBirds : NetworkBehaviour
     [ClientRpc]
     public void RpcReveilPrice()
     {
+        lidOff.Play();
         chestLid.transform.localPosition = new Vector3(0.05f, -0.2f, -0.6f);
         chestLid.transform.localRotation = Quaternion.Euler(-161.55f, 0, 0);
         priceReveil.moveToPosition();
         priceReveiledOnce = true;
+        reveilPriceSound.Play();
+        particleReveil.Play();
     }
 }

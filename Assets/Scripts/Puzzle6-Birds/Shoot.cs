@@ -13,6 +13,9 @@ public class Shoot : NetworkBehaviour
     public float pullSpeed = 50;
     public bool arrowSlotted;
     public bool hideArrow;
+    public AudioSource bowShoot;
+    public AudioSource bowDraw;
+    public bool hasPlayedOnce;
 
     void Start()
     {
@@ -37,9 +40,21 @@ public class Shoot : NetworkBehaviour
         if (Input.GetMouseButton(0))
         {
             pullAmount += Time.deltaTime * pullSpeed;
+            if (!bowDraw.isPlaying && hasPlayedOnce == false)
+            {
+                bowDraw.Play();
+                hasPlayedOnce = true;
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {
+            if (bowDraw.isPlaying)
+            {
+                bowDraw.Stop();
+                
+            }
+            hasPlayedOnce = false;
+            bowShoot.Play();
             arrowSlotted = false;
             _arrowRigidB.isKinematic = false;
             arrow.transform.parent = null;

@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class SolutionMusic : MonoBehaviour
+public class SolutionMusic : NetworkBehaviour
 {
     public List<string> CorrectSounds = new List<string>();
     public List<string> PlayedSounds = new List<string>();
+    public List<int> CorrectRotation = new List<int>();
+    public List<int> currentRotation = new List<int>();
+    public GameObject[] bricks;
     public GameObject[] birds;
     public AudioSource crowSound;
     public bool isSolved;
     public SoundFeedback feedbackScript;
-
+    public AudioSource rotationSolvedSound;
     private void Start()
     {
         for(int i = 0; i < birds.Length; i++)
@@ -28,13 +31,11 @@ public class SolutionMusic : MonoBehaviour
         {
             if (SoundCheck())
             {
-                Debug.Log("is true");
                 isSolved = true;
                 ShowBirds();     
             }
             else
             {
-                Debug.Log("is false");
                 PlayedSounds.Clear();
 
             }
@@ -62,12 +63,58 @@ public class SolutionMusic : MonoBehaviour
         {
             if(PlayedSounds[i] != CorrectSounds[i])
             {
-                Debug.Log("this :" + PlayedSounds[i] + "and this: " + CorrectSounds[i] + "is not the same");
                 return false;
-                
             }
         }
         return true;
+    }
+
+    public void CallDeactivate()
+    {
+        if (!isServer) return;
+        RpcDeactivate();
+    }
+
+    public bool RotationCheck()
+    {
+        for (int i = 0; i < currentRotation.Count; i++)
+        {
+            if (currentRotation[i] != CorrectRotation[i])
+            {
+                Debug.Log("is false");
+                return false;
+            }
+        }
+        return true;
+    }
+
+    [ClientRpc]
+    public void RpcCheckboard()
+    {
+        for(int i = 0; i< bricks.Length; i++)
+        {
+            currentRotation.Add(bricks[i].GetComponent<RotateBricks>().currentAngle);
+        }
+
+        if (RotationCheck())
+        {
+            CallDeactivate();
+        }
+        else
+        {
+            currentRotation.Clear();
+        }
+    }
+
+    [ClientRpc]
+    public void RpcDeactivate()
+    {
+        for(int i = 0; i < bricks.Length; i++)
+        {
+            bricks[i].GetComponent<RotateBricks>().InteractMsg = "";
+            bricks[i].GetComponent<RotateBricks>().isRotating = true;
+        }
+        rotationSolvedSound.Play();
     }
 }
 
