@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using UnityEngine.SceneManagement;
 
 public class NetworkPlayerUseItem : NetworkBehaviour
 {
@@ -22,6 +23,10 @@ public class NetworkPlayerUseItem : NetworkBehaviour
             if (!usedItem.GetComponent<NetworkInteraction>().itemHeld) {
                 if (itemId != null && !itemId.hasAuthority) {
                     if (CheckHands()) {
+                        if (SceneManager.GetActiveScene().name == "Puzzle10-geryon") {
+                            CmdUseItem(usedItem);
+                        }
+                        
                         int hand = GetHand();
                         itemId.gameObject.GetComponent<AudioSource>().Play();
                         CmdClientRequest(itemId);
@@ -144,6 +149,7 @@ public class NetworkPlayerUseItem : NetworkBehaviour
 
         heldItem.transform.parent = null;
         heldInter.holderItem = receiver;
+
 
         heldInter.itemHeld = false;
         heldInter.isInItem = true;
