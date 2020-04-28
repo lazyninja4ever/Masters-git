@@ -12,8 +12,12 @@ public class TileHandler : NetworkBehaviour
     public p11EndColl rightEnd;
     public p11EndColl leftEnd;
     public ResetPositionP11 resetPositionScript;
-
+    public ParticleSystem fireL1;
+    public ParticleSystem fireL2;
+    public ParticleSystem fireL3;
+    public ParticleSystem fireL4;
     public HideObjects[] fences;
+    public AudioSource fireSound;
 
 
     public void Start()
@@ -48,7 +52,12 @@ public class TileHandler : NetworkBehaviour
                 currentColor = ColorPath[colorPathIncrease];
             }
             else {
-                resetPositionScript.ResetPosition();
+                fireSound.Play();
+                fireL1.Play();
+                fireL2.Play();
+                fireL3.Play();
+                fireL4.Play();
+                resetPositionScript.Invoke("ResetPosition", 0.2f);
                 Invoke("ResetBoard", 0.2f);
                 
             }

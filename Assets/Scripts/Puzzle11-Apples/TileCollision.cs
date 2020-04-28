@@ -7,6 +7,7 @@ public class TileCollision : TileCollisionDetektion
 {
     public string colour;
     public TileHandler tileHandlerScript;
+    public AudioSource tileSound;
 
     public override void ReactToCollision()
     {
@@ -14,5 +15,6 @@ public class TileCollision : TileCollisionDetektion
         if (!isServer) return;
         Debug.Log("collided with at tile");
         tileHandlerScript.CheckColour(colour);
+        tileSound.Play();
     }
 }
