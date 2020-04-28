@@ -8,7 +8,7 @@ public class ScaffoldingRotate : NetworkInteraction
     public bool isRotating;
     public int currentAngle = 0;
     public ScaffoldingSolution scaffSolutionScript;
-  //  public AudioSource brickSound;
+    public AudioSource brickSound;
 
     public override void InterActionFuntion(GameObject player)
     {
@@ -24,7 +24,7 @@ public class ScaffoldingRotate : NetworkInteraction
     public IEnumerator Rotate(Vector3 axis, float angle, float duration = 1.0f)
     {
         isRotating = true;
-    //    brickSound.Play();
+        brickSound.Play();
         Quaternion from = transform.rotation;
         Quaternion to = transform.rotation;
         to *= Quaternion.Euler(axis.x, axis.y, angle);

@@ -6,7 +6,7 @@ using Mirror;
 public class SolutionBirds : NetworkBehaviour
 {
     //public List<string> deadBirds = new List<string>();
-    public GameObject chestLid;
+  //  public GameObject chestLid;
     public ShowObjects priceReveil;
     public bool priceReveiledOnce;
     public int birdsCount;
@@ -15,6 +15,8 @@ public class SolutionBirds : NetworkBehaviour
     public AudioSource lidOff;
     public AudioSource reveilPriceSound;
     public ParticleSystem particleReveil;
+    public AudioSource crowsAmbSound;
+    public Animator chestLidAnim;
 
     // Update is called once per frame
     void Update()
@@ -54,12 +56,13 @@ public class SolutionBirds : NetworkBehaviour
     [ClientRpc]
     public void RpcReveilPrice()
     {
+        crowsAmbSound.Stop();
         lidOff.Play();
-        chestLid.transform.localPosition = new Vector3(0.05f, -0.2f, -0.6f);
-        chestLid.transform.localRotation = Quaternion.Euler(-161.55f, 0, 0);
+        chestLidAnim.Play("chestLid");
         priceReveil.moveToPosition();
         priceReveiledOnce = true;
         reveilPriceSound.Play();
         particleReveil.Play();
     }
+
 }

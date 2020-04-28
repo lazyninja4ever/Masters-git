@@ -15,6 +15,7 @@ public class SolutionMusic : NetworkBehaviour
     public bool isSolved;
     public SoundFeedback feedbackScript;
     public AudioSource rotationSolvedSound;
+
     private void Start()
     {
         for(int i = 0; i < birds.Length; i++)
@@ -45,15 +46,14 @@ public class SolutionMusic : NetworkBehaviour
         }
     }
 
+
     void ShowBirds()
     {
-        crowSound = GetComponent<AudioSource>();
         crowSound.Play();
         for (int i = 0; i < birds.Length; i++)
         {
             birds[i].GetComponent<Renderer>().enabled = true;
         }
-
     }
 
     bool SoundCheck()
