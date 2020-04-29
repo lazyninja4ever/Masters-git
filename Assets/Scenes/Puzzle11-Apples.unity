@@ -61767,8 +61767,8 @@ MonoBehaviour:
   fenceEndAnim: {fileID: 2054148964}
   fenceSound: {fileID: 1126346253}
   fenceEndStartAnim: {fileID: 559803600}
-  endGameSound: {fileID: 0}
-  particleEnd: {fileID: 0}
+  endGameSound: {fileID: 1347378398}
+  particleEnd: {fileID: 5249633398779196775}
 --- !u!4 &1874864433
 Transform:
   m_ObjectHideFlags: 0
