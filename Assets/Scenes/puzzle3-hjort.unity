@@ -7499,6 +7499,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &396615749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5487455895019726998, guid: c5fd5c105cb0b4540a98bb46780b4bba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1395996866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &399313395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37345,6 +37351,7 @@ MonoBehaviour:
   syncInterval: 0.1
   solutionItems:
   - {fileID: 386389930}
+  - {fileID: 396615749}
   solvedRun: {fileID: 1646788360}
 --- !u!1 &1347177979
 GameObject:
@@ -44924,8 +44931,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505027832}
-  m_LocalRotation: {x: 0.25726035, y: 0.038552534, z: 0.010273353, w: -0.9655181}
-  m_LocalPosition: {x: 143.36047, y: -113.53313, z: -1.1819115}
+  m_LocalRotation: {x: -0.15130666, y: 0.15850174, z: 0.02458781, w: 0.97538656}
+  m_LocalPosition: {x: 84.98749, y: -86.10428, z: -87.334045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

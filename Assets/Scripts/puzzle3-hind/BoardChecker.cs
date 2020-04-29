@@ -156,7 +156,7 @@ public class BoardChecker : NetworkReveiler {
             if (board2[3].pipePosition == 0 && board2[5].pipePosition == 0) {
                 if (board2[0].pipePosition == 3 && board2[1].pipePosition == 1 && board2[8].pipePosition == 0 && board2[11].pipePosition == 1) {
                     //short path
-                    if (board2[10].pipePosition == 0) {
+                    if (board2[10].pipePosition == 1) {
                         //right exit
                         if (board2[13].pipePosition == 1 && board2[12].pipePosition == 3) {
                             return 0;
@@ -165,7 +165,7 @@ public class BoardChecker : NetworkReveiler {
                             return 3;
                         }
                         //long path
-                    } else if (board2[10].pipePosition == 1 && board2[7].pipePosition == 0 && board2[6].pipePosition == 3 && board2[9].pipePosition == 2) {
+                    } else if (board2[10].pipePosition == 0 && board2[7].pipePosition == 0 && board2[6].pipePosition == 3 && board2[9].pipePosition == 2) {
                         //right exit
                         if (board2[13].pipePosition == 1 && board2[12].pipePosition == 3) {
                             return 0;
