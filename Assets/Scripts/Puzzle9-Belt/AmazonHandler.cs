@@ -17,7 +17,7 @@ public class AmazonHandler : NetworkBehaviour
 
         foreach (var amazon in amazons) {
             amazon.TurnQuarterRound();
-            amazonSounds.Play();
+            RpcPlaySound();
         }
     }
 
@@ -27,7 +27,12 @@ public class AmazonHandler : NetworkBehaviour
 
         foreach (var amazon in amazons) {
             amazon.ResetPositions();
-            amazonSounds.Play();
+            RpcPlaySound();
         }
+    }
+
+    [ClientRpc]
+    void RpcPlaySound() {
+        amazonSounds.Play();
     }
 }
