@@ -5,12 +5,13 @@ using Mirror;
 
 public class Handles : NetworkReveiler
 {
-    public ShowObjects fenceLarge;
+  /*  public ShowObjects fenceLarge;
     public HideObjects fenceLargeHide;
     public ShowObjects fenceMedium;
     public HideObjects fenceMediumHide;
     public ShowObjects fenceStart;
-    public HideObjects fenceStartHide;
+    public HideObjects fenceStartHide; */
+
     public FenceStatus fenceScript;
     public HandleCollision handleLCollisionScript;
     public HandleCollision handleRCollisionScript;
@@ -18,9 +19,11 @@ public class Handles : NetworkReveiler
     public GameObject colorBoardR;
     public GameObject startBoardL;
     public GameObject startBoardR;
-    public GameObject playerCollided;
+ //   public GameObject playerCollided;
     public bool handleOn;
     public bool serverIsLeft;
+    public Animator fenceAnim;
+    public AudioSource fenceSound;
 
     public override void ReveilPrice()
     {
@@ -50,17 +53,21 @@ public class Handles : NetworkReveiler
     [ClientRpc]
     public void RpcHideFence()
     {
-        fenceLarge.moveToPosition();
-        fenceMedium.moveToPosition();
-        fenceStartHide.moveToPosition();
+        /*  fenceLarge.moveToPosition();
+          fenceMedium.moveToPosition();
+          fenceStartHide.moveToPosition(); */
+        fenceAnim.Play("FenceHide");
+        fenceSound.Play();
     }
 
     [ClientRpc]
     public void RpcReveil()
     {
-        fenceStart.moveToPosition();
-        fenceMediumHide.moveToPosition();
-        fenceLargeHide.moveToPosition();
+        /*  fenceStart.moveToPosition();
+         fenceMediumHide.moveToPosition();
+         fenceLargeHide.moveToPosition(); */
+        fenceAnim.Play("FenceShow");
+        fenceSound.Play();
     }
 
     [ClientRpc]

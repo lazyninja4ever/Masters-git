@@ -16,8 +16,16 @@ public class TileHandler : NetworkBehaviour
     public ParticleSystem fireL2;
     public ParticleSystem fireL3;
     public ParticleSystem fireL4;
-    public HideObjects[] fences;
+
+    public ParticleSystem fireR1;
+    public ParticleSystem fireR2;
+    public ParticleSystem fireR3;
+    public ParticleSystem fireR4;
+
+   // public HideObjects[] fences;
     public AudioSource fireSound;
+    public Animator fenceEndAnim;
+    public AudioSource fenceSound;
 
 
     public void Start()
@@ -27,9 +35,11 @@ public class TileHandler : NetworkBehaviour
 
     public void hasEnded() {
         if (rightEnd.hasEntered && leftEnd.hasEntered) {
-            foreach (HideObjects fence in fences) {
-                fence.moveToPosition();
-            }
+            /*  foreach (HideObjects fence in fences) {
+                  fence.moveToPosition();
+              }*/
+            fenceEndAnim.Play("FenceEndGame");
+            fenceSound.Play();
         }  
     }
 
