@@ -7324,6 +7324,7 @@ GameObject:
   - component: {fileID: 396073413}
   - component: {fileID: 396073411}
   - component: {fileID: 396073412}
+  - component: {fileID: 396073414}
   m_Layer: 0
   m_Name: SolutionCheckerHind
   m_TagString: Untagged
@@ -7384,6 +7385,9 @@ MonoBehaviour:
   - {fileID: 940978351}
   - {fileID: 2045538168}
   solvedRun: {fileID: 396073411}
+  highLighter: {fileID: 0}
+  checkHighLight: 0
+  wrongSolution: {fileID: 396073414}
 --- !u!114 &396073413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7399,6 +7403,102 @@ MonoBehaviour:
   sceneId: 2595390535
   serverOnly: 0
   m_AssetId: 
+--- !u!82 &396073414
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396073409}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 372cb39e207554e4ab769e3356f1ed21, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &399313395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19347,6 +19447,7 @@ MonoBehaviour:
   isOccupied: 0
   solutionItem: 0
   interactMsg: place item
+  heldItem: {fileID: 0}
   solutionChecker: {fileID: 396073412}
   receiverSound: {fileID: 940978356}
 --- !u!114 &940978353
@@ -37244,6 +37345,7 @@ MonoBehaviour:
   syncInterval: 0.1
   solutionItems:
   - {fileID: 386389930}
+  - {fileID: 1395996867}
   solvedRun: {fileID: 1646788360}
 --- !u!1 &1347177979
 GameObject:
@@ -38676,6 +38778,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9676f5df4de02c5418284c70c12fc207, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fd5c105cb0b4540a98bb46780b4bba, type: 3}
+--- !u!1 &1395996867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5487455895019726998, guid: c5fd5c105cb0b4540a98bb46780b4bba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1395996866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1396544184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: c98769ee931928249859e9aec01b07f0,
@@ -44823,8 +44931,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505027832}
-  m_LocalRotation: {x: -0.12078622, y: 0.6214477, z: 0.097724736, w: 0.76789546}
-  m_LocalPosition: {x: 48.575966, y: -114.40375, z: 0.75008583}
+  m_LocalRotation: {x: 0.2588137, y: 0.02695326, z: 0.007226399, w: -0.96552414}
+  m_LocalPosition: {x: 193.37173, y: -125.11783, z: 10.988575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53711,6 +53819,7 @@ MonoBehaviour:
   isOccupied: 0
   solutionItem: 3
   interactMsg: place item
+  heldItem: {fileID: 0}
   solutionChecker: {fileID: 396073412}
   receiverSound: {fileID: 2045538173}
 --- !u!114 &2045538170

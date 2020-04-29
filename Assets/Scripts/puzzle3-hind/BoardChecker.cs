@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class BoardChecker : NetworkReveiler
-{
+public class BoardChecker : NetworkReveiler {
     public List<showAntHoof> antlers;
     public List<showAntHoof> hooves;
 
@@ -38,7 +37,7 @@ public class BoardChecker : NetworkReveiler
     public void CheckBoards() {
         int result1 = CheckBoardOne();
         int result2 = CheckBoardTwo();
-        if (result1 !=6) {
+        if (result1 != 6) {
             antlers[result1].moveToPosition();
             shownItem1 = result1;
         }
@@ -67,12 +66,12 @@ public class BoardChecker : NetworkReveiler
                         //wrong exit
                         if (board1[12].pipePosition == 3) {
                             return 3;
-                        // right exit
+                            // right exit
                         } else if (board1[12].pipePosition == 0 && board1[13].pipePosition == 1 && board1[14].pipePosition == 0) {
-                            return 0; 
+                            return 0;
                         }
                     }
-                //left path down
+                    //left path down
                 } else if (board1[4].pipePosition == 3) {
                     if (board1[3].pipePosition == 1 && board1[6].pipePosition == 0 && board1[7].pipePosition == 0) {
                         //wrong exit
@@ -85,7 +84,7 @@ public class BoardChecker : NetworkReveiler
                     }
                 }
             }
-        //for silver antlers
+            //for silver antlers
         } else if (board1[4].pipePosition == 2) {
             if (board1[0].pipePosition == 0 && board1[3].pipePosition == 0 && board1[8].pipePosition == 2 && board1[11].pipePosition == 0) {
                 //short path
@@ -93,11 +92,11 @@ public class BoardChecker : NetworkReveiler
                     //right exit
                     if (board1[14].pipePosition == 0) {
                         return 1;
-                    //wrong exit
+                        //wrong exit
                     } else if (board1[14].pipePosition == 1 && board1[13].pipePosition == 1 && board1[12].pipePosition == 1) {
                         return 4;
                     }
-                //long path
+                    //long path
                 } else if (board1[7].pipePosition == 1 && board1[6].pipePosition == 1 && board1[9].pipePosition == 0 && board1[10].pipePosition == 3) {
                     //right exit
                     if (board1[14].pipePosition == 0) {
@@ -109,7 +108,7 @@ public class BoardChecker : NetworkReveiler
                     }
                 }
             }
-        //for bronze antlers
+            //for bronze antlers
         } else if (board1[4].pipePosition == 1) {
             if (board1[2].pipePosition == 0 && board1[5].pipePosition == 3 && board1[8].pipePosition == 2 && board1[11].pipePosition == 0) {
                 //short path
@@ -117,12 +116,12 @@ public class BoardChecker : NetworkReveiler
                     //right exit
                     if (board1[14].pipePosition == 0) {
                         return 2;
-                    //wrong exit
+                        //wrong exit
                     } else if (board1[14].pipePosition == 1 && board1[13].pipePosition == 1 && board1[12].pipePosition == 1) {
                         return 5;
                     }
-                //long path
-                }else if (board1[7].pipePosition == 1 && board1[6].pipePosition == 1 && board1[9].pipePosition == 0 && board1[10].pipePosition == 3) {
+                    //long path
+                } else if (board1[7].pipePosition == 1 && board1[6].pipePosition == 1 && board1[9].pipePosition == 0 && board1[10].pipePosition == 3) {
                     //right exit
                     if (board1[14].pipePosition == 0) {
                         return 2;
@@ -145,12 +144,12 @@ public class BoardChecker : NetworkReveiler
                 //wrong exit
                 if (board2[13].pipePosition == 2 && board2[14].pipePosition == 0) {
                     return 4;
-                //right exit
+                    //right exit
                 } else if (board2[13].pipePosition == 1 && board2[12].pipePosition == 3) {
                     return 1;
                 }
             }
-        //for gold or bronze
+            //for gold or bronze
         } else if (board2[4].pipePosition == 1) {
             //for gold
             if (board2[3].pipePosition == 0 && board2[5].pipePosition == 0) {
@@ -160,12 +159,12 @@ public class BoardChecker : NetworkReveiler
                         //right exit
                         if (board2[13].pipePosition == 1 && board2[12].pipePosition == 3) {
                             return 0;
-                        //wrong exit
-                        } else if(board2[13].pipePosition == 2 && board2[14].pipePosition == 0) {
+                            //wrong exit
+                        } else if (board2[13].pipePosition == 2 && board2[14].pipePosition == 0) {
                             return 3;
                         }
-                    //long path
-                    }else if (board2[10].pipePosition == 1 && board2[7].pipePosition == 0 && board2[6].pipePosition == 3 && board2[9].pipePosition == 2) {
+                        //long path
+                    } else if (board2[10].pipePosition == 1 && board2[7].pipePosition == 0 && board2[6].pipePosition == 3 && board2[9].pipePosition == 2) {
                         //right exit
                         if (board2[13].pipePosition == 1 && board2[12].pipePosition == 3) {
                             return 0;
@@ -176,19 +175,19 @@ public class BoardChecker : NetworkReveiler
                         }
                     }
                 }
-            //for bronze
+                //for bronze
             } else if (board2[3].pipePosition == 1 && board2[5].pipePosition == 1) {
                 if (board2[2].pipePosition == 0 && board2[6].pipePosition == 2 && board2[7].pipePosition == 0) {
                     //right exit short
                     if (board2[10].pipePosition == 1 && board2[9].pipePosition == 3 && board2[12].pipePosition == 1) {
                         return 2;
-                    //right exit long
+                        //right exit long
                     } else if (board2[9].pipePosition == 3 && board2[10].pipePosition == 0 && board2[11].pipePosition == 0 && board2[12].pipePosition == 1 && board2[13].pipePosition == 2 && board2[14].pipePosition == 1) {
                         return 2;
-                    //wrong exit short
+                        //wrong exit short
                     } else if (board2[10].pipePosition == 0 && board2[11].pipePosition == 0 && board2[14].pipePosition == 2) {
                         return 5;
-                    //wrong exit long
+                        //wrong exit long
                     } else if (board2[9].pipePosition == 3 && board2[10].pipePosition == 1 && board2[11].pipePosition == 0 && board2[12].pipePosition == 2 && board2[13].pipePosition == 1 && board2[14].pipePosition == 2) {
                         return 5;
                     }
@@ -200,8 +199,8 @@ public class BoardChecker : NetworkReveiler
 
     public void ResetItems() {
         //hide antlers shownItem1
+        RpcSetItemNumbers(shownItem1, shownItem2);
         if (shownItem1 != 6) {
-            shownItem1GO = antlers[shownItem1];
             if (shownItem1 < 3) {
                 RpcResetSetup(shownItem1GO.gameObject);
             }
@@ -209,11 +208,23 @@ public class BoardChecker : NetworkReveiler
         }
         //hide hooves shownItem2
         if (shownItem2 != 6) {
-            shownItem2GO = shownItem2GO = hooves[shownItem2];
+            shownItem2GO = hooves[shownItem2];
             if (shownItem2 < 3) {
                 RpcResetSetup(shownItem2GO.gameObject);
             }
             shownItem2GO.gameObject.GetComponent<HideObjects>().moveToPosition();
+        }
+    }
+
+    [ClientRpc]
+    void RpcSetItemNumbers(int item1No, int item2No) {
+        if (item1No != 6) {
+            shownItem1 = item1No;
+            shownItem1GO = antlers[shownItem1];
+        }
+        if (item2No != 6) {
+            shownItem2 = item2No;
+            shownItem2GO = hooves[shownItem2];
         }
     }
 
