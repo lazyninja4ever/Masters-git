@@ -25,6 +25,7 @@ public class BoardChecker : NetworkReveiler {
     public AudioSource wrongSound;
     public AudioSource headSound;
     public AudioSource hoofSound;
+    public AudioSource noItemSound;
 
     public override void ReveilPrice() {
         if (!isServer) return;
@@ -47,12 +48,12 @@ public class BoardChecker : NetworkReveiler {
             shownItem2 = result2;
         }
 
-        if (result1 < 3 || result2 < 3) {
-            particleRight.Play();
-            rightSound.Play();
+        if (result1 == 6 && result2 == 6) {
+            RpcPlayNoDispence();
+        }else if (result1 < 3 || result2 < 3) {
+            RpcPlayRightDispence();
         } else if (result1 < 6 || result2 < 6) {
-            particleWrong.Play();
-            wrongSound.Play();
+            RpcPlayWrongDispence();
         }
     }
 
@@ -201,6 +202,7 @@ public class BoardChecker : NetworkReveiler {
         //hide antlers shownItem1
         RpcSetItemNumbers(shownItem1, shownItem2);
         if (shownItem1 != 6) {
+            shownItem1GO = antlers[shownItem1];
             if (shownItem1 < 3) {
                 RpcResetSetup(shownItem1GO.gameObject);
             }
@@ -214,6 +216,23 @@ public class BoardChecker : NetworkReveiler {
             }
             shownItem2GO.gameObject.GetComponent<HideObjects>().moveToPosition();
         }
+    }
+
+    [ClientRpc]
+    void RpcPlayNoDispence() {
+        noItemSound.Play();
+    }
+
+    [ClientRpc]
+    void RpcPlayRightDispence() {
+        particleRight.Play();
+        rightSound.Play();
+    }
+
+    [ClientRpc]
+    void RpcPlayWrongDispence() {
+        particleWrong.Play();
+        wrongSound.Play();
     }
 
     [ClientRpc]
