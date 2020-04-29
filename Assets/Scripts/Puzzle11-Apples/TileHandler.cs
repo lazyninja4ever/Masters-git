@@ -16,6 +16,7 @@ public class TileHandler : NetworkBehaviour
     public ParticleSystem fireL2;
     public ParticleSystem fireL3;
     public ParticleSystem fireL4;
+    public bool hasEntered;
 
     public ParticleSystem fireR1;
     public ParticleSystem fireR2;
@@ -36,7 +37,7 @@ public class TileHandler : NetworkBehaviour
     }
 
     public void hasEnded() {
-        if (rightEnd.hasEntered && leftEnd.hasEntered) {
+        if (rightEnd.hasEntered && leftEnd.hasEntered && hasEntered == false) {
             /*  foreach (HideObjects fence in fences) {
                   fence.moveToPosition();
               }*/
@@ -91,6 +92,7 @@ public class TileHandler : NetworkBehaviour
     [ClientRpc]
     public void RpcFinalFence()
     {
+        hasEntered = true;
         fenceSound.Play();
         fenceEndAnim.Play("FenceEndGame");
         fenceEndStartAnim.Play("fenceEndGameSingle");
