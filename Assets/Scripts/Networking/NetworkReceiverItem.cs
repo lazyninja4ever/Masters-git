@@ -11,7 +11,7 @@ public class NetworkReceiverItem : NetworkDependant
     public override void CheckInteraction(GameObject item) {
         if (!isServer) return;
         heldItem = item;
-        receiverSound.Play();
+        RpcPlaySound();
         if (item.GetComponent<NetworkInteraction>().solutionNmbr == solutionItem) {
             isSolved = true;
         }
@@ -19,6 +19,11 @@ public class NetworkReceiverItem : NetworkDependant
         solutionChecker.PuzzleState();
         //check if received item is the solution 
         //ask solution checker to check puzzle,
+    }
+
+    [ClientRpc]
+    void RpcPlaySound() {
+        receiverSound.Play();
     }
 
 }
