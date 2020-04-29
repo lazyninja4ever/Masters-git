@@ -22,10 +22,12 @@ public class TileHandler : NetworkBehaviour
     public ParticleSystem fireR3;
     public ParticleSystem fireR4;
 
-   // public HideObjects[] fences;
     public AudioSource fireSound;
     public Animator fenceEndAnim;
     public AudioSource fenceSound;
+    public Animator fenceEndStartAnim;
+    public AudioSource endGameSound;
+    public ParticleSystem particleEnd;
 
 
     public void Start()
@@ -89,8 +91,12 @@ public class TileHandler : NetworkBehaviour
     [ClientRpc]
     public void RpcFinalFence()
     {
-        fenceEndAnim.Play("FenceEndGame");
         fenceSound.Play();
+        fenceEndAnim.Play("FenceEndGame");
+        fenceEndStartAnim.Play("fenceEndGameSingle");
+        endGameSound.Play();
+        particleEnd.Play();
+
     }
 
     /*
