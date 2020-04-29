@@ -15,6 +15,12 @@ public class TileCollision : TileCollisionDetektion
         if (!isServer) return;
         Debug.Log("collided with at tile");
         tileHandlerScript.CheckColour(colour);
+   //     tileSound.Play();
+    }
+
+    [ClientRpc]
+    public void RpcTilePlaySound()
+    {
         tileSound.Play();
     }
 }

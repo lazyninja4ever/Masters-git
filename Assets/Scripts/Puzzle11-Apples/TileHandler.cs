@@ -39,7 +39,7 @@ public class TileHandler : NetworkBehaviour
                   fence.moveToPosition();
               }*/
             fenceEndAnim.Play("FenceEndGame");
-            fenceSound.Play();
+            RpcPlaySound();
         }  
     }
 
@@ -62,11 +62,7 @@ public class TileHandler : NetworkBehaviour
                 currentColor = ColorPath[colorPathIncrease];
             }
             else {
-                fireSound.Play();
-                fireL1.Play();
-                fireL2.Play();
-                fireL3.Play();
-                fireL4.Play();
+                RpcPlayResetAnimations();
                 resetPositionScript.Invoke("ResetPosition", 0.2f);
                 Invoke("ResetBoard", 0.2f);
                 
@@ -75,6 +71,27 @@ public class TileHandler : NetworkBehaviour
 
         
     }
+
+    [ClientRpc]
+    public void RpcPlayResetAnimations()
+    {
+        fireSound.Play();
+        fireL1.Play();
+        fireL2.Play();
+        fireL3.Play();
+        fireL4.Play();
+        fireR1.Play();
+        fireR2.Play();
+        fireR3.Play();
+        fireR4.Play();
+    }
+
+    [ClientRpc]
+    public void RpcPlaySound()
+    {
+        fenceSound.Play();
+    }
+
     /*
     public void CallRpcColorCheck(GameObject tileColor)
     {
