@@ -10,6 +10,7 @@ public class ResetPlayerPositionP9 : NetworkBehaviour
     public GameObject[] players;
     public AmazonHandler amazonHandler;
     public GameObject resetCloud;
+    public AudioSource swordHitSound;
     //public GameObject player1Particle;
 
     public void ResetPosition() {
@@ -22,6 +23,7 @@ public class ResetPlayerPositionP9 : NetworkBehaviour
 
     [ClientRpc]
     void RpcResetPlayerPosition() {
+        swordHitSound.Play();
         players = GameObject.FindGameObjectsWithTag("Player");
 
         foreach (GameObject player in players) {
