@@ -9,6 +9,9 @@ public class ResetPositionP11 : NetworkBehaviour
     public Transform playerPosL;
     public Transform playerPosR;
     public Handles handlesScript;
+    public ParticleSystem particleLeft;
+    public ParticleSystem particleRight;
+    public AudioSource resetSound;
     
 
     public void ResetPosition()
@@ -42,6 +45,9 @@ public class ResetPositionP11 : NetworkBehaviour
                     player.GetComponent<CharacterController>().enabled = false;
                     player.transform.SetPositionAndRotation(newPosition.position, newPosition.rotation);
                     player.GetComponent<CharacterController>().enabled = enabled;
+                    particleLeft.Play();
+                    particleRight.Play();
+                    resetSound.Play();
                 }
                 else if (!isServer)
                 {
@@ -56,6 +62,9 @@ public class ResetPositionP11 : NetworkBehaviour
                     player.GetComponent<CharacterController>().enabled = false;
                     player.transform.SetPositionAndRotation(newPosition.position, newPosition.rotation);
                     player.GetComponent<CharacterController>().enabled = enabled;
+                    particleLeft.Play();
+                    particleRight.Play();
+                    resetSound.Play();
                 }
 
             }
