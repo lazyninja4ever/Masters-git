@@ -38,8 +38,8 @@ public class TileHandler : NetworkBehaviour
             /*  foreach (HideObjects fence in fences) {
                   fence.moveToPosition();
               }*/
-            fenceEndAnim.Play("FenceEndGame");
-            RpcPlaySound();
+            
+            RpcFinalFence();
         }  
     }
 
@@ -87,8 +87,9 @@ public class TileHandler : NetworkBehaviour
     }
 
     [ClientRpc]
-    public void RpcPlaySound()
+    public void RpcFinalFence()
     {
+        fenceEndAnim.Play("FenceEndGame");
         fenceSound.Play();
     }
 
