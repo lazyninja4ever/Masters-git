@@ -1200,7 +1200,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -2134,6 +2134,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: c808f9f1324ab0945bf9b3be5608be0a, type: 3}
+--- !u!4 &112805199 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 899162097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &116085568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2686,7 +2692,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -2775,7 +2781,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -2785,17 +2791,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 90.2
+      value: 132.09232
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.6
+      value: -35.90001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 45
+      value: 111.54554
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -2805,7 +2811,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -2820,7 +2826,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -3029,7 +3035,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -3322,7 +3328,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -3332,17 +3338,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -68.5
+      value: -26.607681
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.6
+      value: -35.90001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 183
+      value: 249.54553
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -3352,7 +3358,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -3367,7 +3373,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -3801,7 +3807,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -4086,7 +4092,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -4930,7 +4936,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -6077,7 +6083,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -6840,7 +6846,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -6850,17 +6856,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -68.5
+      value: -26.607681
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.9
+      value: -36.199997
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 156.7
+      value: 223.24554
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -6870,7 +6876,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -6885,7 +6891,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 61
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -7951,7 +7957,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 718.6406
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -8134,6 +8140,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: c808f9f1324ab0945bf9b3be5608be0a,
     type: 3}
   m_PrefabInstance: {fileID: 340118635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &343327312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938584698}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &346747993
 PrefabInstance:
@@ -9106,7 +9118,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -14345,7 +14357,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -15617,7 +15629,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -16740,7 +16752,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -17168,7 +17180,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -17601,7 +17613,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -17611,17 +17623,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 90.2
+      value: 132.09232
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.6
+      value: -35.90001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -127.6
+      value: -61.05446
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -17631,7 +17643,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -17646,7 +17658,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -17757,7 +17769,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -18047,7 +18059,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -24463,7 +24475,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -25099,7 +25111,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -26183,7 +26195,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -26372,6 +26384,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a6d7b1c53797cef4faacc6ab3072c26a,
     type: 3}
   m_PrefabInstance: {fileID: 754884161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &757890294 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1520373868}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &766875220
 PrefabInstance:
@@ -27239,7 +27257,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -27792,7 +27810,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -28888,7 +28906,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -28898,17 +28916,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -173.3
+      value: -131.40768
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.6
+      value: -35.90001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 45
+      value: 111.54554
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -28918,7 +28936,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -28933,7 +28951,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -29044,7 +29062,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -34129,6 +34147,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 915090043}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &916838818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 171803125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &923369448
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34435,7 +34459,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -34591,7 +34615,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -35094,7 +35118,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -35505,7 +35529,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -35658,7 +35682,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -36389,7 +36413,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -36805,7 +36829,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -36961,7 +36985,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -37081,7 +37105,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -37091,17 +37115,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -161.9
+      value: -120.007675
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -165.2
+      value: -36.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.5
+      value: 92.04554
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -37111,7 +37135,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -37126,7 +37150,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -42783,7 +42807,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -43827,7 +43851,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -44077,7 +44101,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -45549,7 +45573,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -50812,7 +50836,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -51099,7 +51123,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -51366,7 +51390,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -52925,7 +52949,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -53430,7 +53454,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -53577,7 +53601,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -53724,7 +53748,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -59574,6 +59598,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 289301614986012343, guid: a6d7b1c53797cef4faacc6ab3072c26a, type: 3}
+--- !u!4 &1403060784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 140990294}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1403515114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59766,7 +59796,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -60206,7 +60236,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -60395,7 +60425,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -60405,17 +60435,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -48.7
+      value: -6.807682
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.7
+      value: -36
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 165.6
+      value: 232.14554
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -60425,7 +60455,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -60440,7 +60470,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 60
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -60963,7 +60993,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -61131,7 +61161,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -61456,7 +61486,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -62365,7 +62395,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -62574,7 +62604,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -62584,17 +62614,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 108
+      value: 149.89232
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.8
+      value: -36.100006
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 34.9
+      value: 101.44554
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -62604,7 +62634,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -62619,7 +62649,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -62730,7 +62760,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -63013,7 +63043,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -63341,7 +63371,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -65847,7 +65877,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -66251,6 +66281,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f12bf8d0a690c3141bf63cb5c3bebe02, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c808f9f1324ab0945bf9b3be5608be0a, type: 3}
+--- !u!4 &1656998975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1782798235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1662486691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66924,7 +66960,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -67410,7 +67446,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -68517,7 +68553,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -68675,6 +68711,16 @@ Transform:
   - {fileID: 254517909}
   - {fileID: 766875221}
   - {fileID: 406698386}
+  - {fileID: 1403060784}
+  - {fileID: 1656998975}
+  - {fileID: 1931756573}
+  - {fileID: 343327312}
+  - {fileID: 112805199}
+  - {fileID: 1897603205}
+  - {fileID: 757890294}
+  - {fileID: 916838818}
+  - {fileID: 2003786167}
+  - {fileID: 1803019865}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68683,7 +68729,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -68693,17 +68739,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.3
+      value: 2.5923195
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.8
+      value: -36.100006
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -124.2
+      value: -57.654457
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -68713,7 +68759,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -68728,7 +68774,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -78799,6 +78845,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1802101530}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1803019865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 288177868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1803112550
 GameObject:
   m_ObjectHideFlags: 0
@@ -81488,6 +81540,12 @@ Transform:
   m_Father: {fileID: 1490403566}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1897603205 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1040612967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1898990067
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81666,7 +81724,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -81822,7 +81880,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -81978,7 +82036,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -82125,7 +82183,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -82326,7 +82384,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -82465,6 +82523,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: c808f9f1324ab0945bf9b3be5608be0a, type: 3}
+--- !u!4 &1931756573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 571742013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1932349815
 GameObject:
   m_ObjectHideFlags: 0
@@ -82615,7 +82679,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -82762,7 +82826,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1777962790}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -82772,17 +82836,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 73.3
+      value: 115.19232
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -164.78
+      value: -36.08
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -116.67
+      value: -50.12446
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -82792,7 +82856,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -82807,7 +82871,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
         type: 3}
@@ -82918,7 +82982,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -83100,7 +83164,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -83538,7 +83602,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 578.63086
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -84233,7 +84297,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -84556,7 +84620,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -84825,6 +84889,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f12bf8d0a690c3141bf63cb5c3bebe02, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c808f9f1324ab0945bf9b3be5608be0a, type: 3}
+--- !u!4 &2003786167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 585a65c7134583544aeb7b1061630c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1435542376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2004117531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84912,7 +84982,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -85068,7 +85138,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -85865,7 +85935,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -86212,7 +86282,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -86403,7 +86473,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -86704,7 +86774,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -87185,7 +87255,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -88449,7 +88519,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
