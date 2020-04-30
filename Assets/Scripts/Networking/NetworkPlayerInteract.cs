@@ -59,7 +59,7 @@ public class NetworkPlayerInteract : MonoBehaviour {
             Vector3 namePos = Camera.main.WorldToScreenPoint(raycastedObj.transform.position);
             showText.transform.position = namePos;
 
-            if (Input.GetKeyDown("f")) {
+            if (Input.GetKeyDown("e")) {
                 userItemScript.UseItem(raycastedObj);
 
             }
@@ -69,14 +69,6 @@ public class NetworkPlayerInteract : MonoBehaviour {
                 InteractionInactive();
         }
 
-        if (Input.GetKeyDown("q")) {
-            DropItem(2);
-        }
-
-        if (Input.GetKeyDown("e")) {
-            DropItem(1);
-        }
-
         if (Input.GetMouseButtonDown(0)) {
             UseItem(2);
         }
@@ -84,11 +76,6 @@ public class NetworkPlayerInteract : MonoBehaviour {
             UseItem(1);
         }
 
-    }
-
-    void DropItem(int hand) {
-        //hand.transform.GetChild(0).transform.GetComponent<PickupInteract>().Drop();
-        userItemScript.DropItem(hand);
     }
 
     void UseItem(int hand) {

@@ -73,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         if (x != 0f || z != 0f) {
-            Debug.Log("am moving");
             playerAnim.Play("Run_002");
             PlayerSoundCheck();
             //check which surface the player is on
@@ -112,7 +111,6 @@ public class PlayerMovement : MonoBehaviour
     void PlayerSoundCheck() {
         if (Physics.Raycast(transform.localPosition - new Vector3(0, -2, 1), Vector3.down, out groundHit, 20, groundMask.value)) {
             string floortag = groundHit.collider.gameObject.tag;
-            Debug.Log(floortag);
             if (floortag == surfaceTagOld && !wasStopped) return;
             if (floortag == "hard") {
                 //play concrete sound code

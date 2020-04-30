@@ -26,7 +26,6 @@ public class PlayerMovementSound : NetworkBehaviour
         } else if (surface == 1) {
             playerMoveSound.clip = hardSound;
         }
-        Debug.Log("played " + surface);
         playerMoveSound.Play();
     }
 

@@ -825,7 +825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -3610,6 +3610,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: temple
       objectReference: {fileID: 0}
+    - target: {fileID: -5842693841212079252, guid: a6e3332eeb2a5c8479a62dbd9676213f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -5842693841212079252, guid: a6e3332eeb2a5c8479a62dbd9676213f,
+        type: 3}
+      propertyPath: m_TagString
+      value: hard
+      objectReference: {fileID: 0}
     - target: {fileID: -9048361528525877575, guid: a6e3332eeb2a5c8479a62dbd9676213f,
         type: 3}
       propertyPath: m_IsActive
@@ -3843,11 +3853,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2982202647875383029, guid: b75c213eaa2d9344a897bbe07efbb511,
-        type: 3}
-      propertyPath: sceneId
-      value: 1732903085
-      objectReference: {fileID: 0}
     - target: {fileID: 2982202647875383028, guid: b75c213eaa2d9344a897bbe07efbb511,
         type: 3}
       propertyPath: ShapeModule.radius.value
@@ -3857,6 +3862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982202647875383029, guid: b75c213eaa2d9344a897bbe07efbb511,
+        type: 3}
+      propertyPath: sceneId
+      value: 1732903085
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2982202647875383026, guid: b75c213eaa2d9344a897bbe07efbb511, type: 3}
@@ -12511,7 +12521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -13475,7 +13485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -18070,7 +18080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -19708,7 +19718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: press f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -19883,6 +19893,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 8950823918547312976, guid: b8a391b7b26ecf742a1c84a68820daa1,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8950823919394618532, guid: b8a391b7b26ecf742a1c84a68820daa1,
         type: 3}
       propertyPath: m_Enabled
@@ -19892,11 +19907,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Convex
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8950823918547312976, guid: b8a391b7b26ecf742a1c84a68820daa1,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8a391b7b26ecf742a1c84a68820daa1, type: 3}
@@ -20053,7 +20063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -21071,7 +21081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -22774,7 +22784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -22975,7 +22985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -25610,6 +25620,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: surrounding (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 368f4dc86efec7645b6f39ee3f2a1edf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 368f4dc86efec7645b6f39ee3f2a1edf,
+        type: 3}
+      propertyPath: m_TagString
+      value: soft
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 368f4dc86efec7645b6f39ee3f2a1edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26538,7 +26558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: f to collect
+  InteractMsg: e to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1

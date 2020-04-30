@@ -56,17 +56,6 @@ public class NetworkPlayerUseItem : NetworkBehaviour
         }
     }
 
-    //called from networkPlayerInteract when q or e is pressed
-    public void DropItem(int hand) {
-        GameObject playerHand = GetHandObject(hand);
-        if (playerHand.transform.childCount > 0) {
-            GameObject heldItem = playerHand.transform.GetChild(0).gameObject;
-            CmdClientRemove(heldItem.GetComponent<NetworkIdentity>());
-            CmdDropItem(heldItem);
-        }
-        
-    }
-
     IEnumerator ChangeItemLayer(GameObject item, string layerName) {
         yield return new WaitForSeconds(2f);
         item.layer = LayerMask.NameToLayer(layerName);
@@ -113,12 +102,6 @@ public class NetworkPlayerUseItem : NetworkBehaviour
     [Command]
     void CmdClientRemove(NetworkIdentity itemId) {
         itemId.RemoveClientAuthority();
-    }
-
-    [Command]
-    void CmdDropItem(GameObject heldItem) {
-        if (!isServer) return;
-        RpcDropItem(heldItem);
     }
 
     [Command]
@@ -185,22 +168,7 @@ public class NetworkPlayerUseItem : NetworkBehaviour
     }
 
     //this is when player drops an item
-    [ClientRpc]
-    void RpcDropItem(GameObject heldItem) {
-        heldItem.layer = LayerMask.NameToLayer("NoPlayerCollision");
-        Rigidbody itemRB = heldItem.GetComponent<Rigidbody>();
-        itemRB.useGravity = true;
-        itemRB.isKinematic = false;
 
-        heldItem.transform.parent = null;
-
-        NetworkInteraction usNI = heldItem.GetComponent<NetworkInteraction>();
-        usNI.itemHeld = false;
-        Vector3 spawnPos = dropPoint.transform.position;
-        heldItem.transform.position = spawnPos;
-
-        StartCoroutine(ChangeItemLayer(heldItem, "Interact"));
-    }
 
 
 }
