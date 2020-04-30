@@ -27,10 +27,23 @@ public class SolutionCheckerHandles : NetworkReveiler
     public Animator anim;
     public GameObject[] tilesMessage;
 
-    private void Start()
+    public void Start()
     {
-        if (!isServer) return;
-        RpcHideMessage();
+        for (int i = 0; i < tilesMessage.Length; i++)
+        {
+            if (tilesMessage[i].GetComponent<TileState>().isSingle == true)
+            {
+                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = " ";
+            }
+            if (tilesMessage[i].GetComponent<TileState>().isPopOthers == true)
+            {
+                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = " ";
+            }
+            else if (tilesMessage[i].GetComponent<TileState>().isTimer == true)
+            {
+                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = " ";
+            }
+        }
     }
 
 
@@ -94,19 +107,20 @@ public class SolutionCheckerHandles : NetworkReveiler
     [ClientRpc]
     public void RpcHideMessage()
     {
+        Debug.Log("called hide message");
         for (int i = 0; i < tilesMessage.Length; i++)
         {
             if (tilesMessage[i].GetComponent<TileState>().isSingle == true)
             {
-                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = "";
+                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = " ";
             }
             if (tilesMessage[i].GetComponent<TileState>().isPopOthers == true)
             {
-                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = "";
+                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = " ";
             }
             else if (tilesMessage[i].GetComponent<TileState>().isTimer == true)
             {
-                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = "";
+                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = " ";
             }
         }
     }
