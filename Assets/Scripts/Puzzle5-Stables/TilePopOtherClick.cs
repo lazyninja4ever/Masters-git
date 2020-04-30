@@ -24,7 +24,6 @@ public class TilePopOtherClick : NetworkInteraction
         if (!isServer) return;
         if(handleScript.waterRunning == true)
         {
-            InteractMsg = "F to interact";
             if(this.GetComponent<TileState>().isPressed == false)
             {
                 RpcPopOthers();

@@ -18,7 +18,6 @@ public class TileSingleClick : NetworkInteraction
         if (!isServer) return;
         if(handlesScript.waterRunning == true)
         {
-            InteractMsg = "F to interact";
             if (this.GetComponent<TileState>().isPressed == false)
             {
                 if(neighbourTile.GetComponent<TileState>().hasWater == true)

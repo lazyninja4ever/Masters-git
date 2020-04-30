@@ -22,6 +22,7 @@ public class WaterStateR : NetworkBehaviour
     public AudioSource reveilSound;
     public Animator anim;
     public bool update;
+    public SolutionCheckerHandles solutionScript;
 
     private void Start()
     {
@@ -107,5 +108,6 @@ public class WaterStateR : NetworkBehaviour
         puzzleSolved = true;
         fence.moveToPosition();
         anim.Play("FenceDown");
+        solutionScript.waterRunning = false;
     }
 } 
