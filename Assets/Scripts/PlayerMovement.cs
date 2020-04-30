@@ -36,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerMovementSound playerSoundScript;
 
+    public bool hasLandedOnce;
+    public AudioSource LandingSound;
+
     private void Awake() {
         portalScript = GameObject.Find("Portal").GetComponent<SceneIntro>();
     }
@@ -68,6 +71,17 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = gravity*10;
         }
      //   Debug.Log("goind down with: " + velocity.y);
+        
+        if(isGrounded && hasLandedOnce == false)
+        {
+            LandingSound.Play();
+            hasLandedOnce = true;
+        }
+
+        if (!isGrounded)
+        {
+            hasLandedOnce = false;
+        }
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");

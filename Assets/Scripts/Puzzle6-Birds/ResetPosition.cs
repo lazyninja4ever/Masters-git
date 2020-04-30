@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class ResetPosition : MonoBehaviour
+public class ResetPosition : NetworkBehaviour
 {
     public Transform currentPos;
     public Transform goToPos;
@@ -15,12 +15,19 @@ public class ResetPosition : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            if (!isServer) return;
             currentPos = goToPos;
             other.gameObject.GetComponent<CharacterController>().enabled = false;
             other.transform.SetPositionAndRotation(currentPos.position, currentPos.rotation);
             other.gameObject.GetComponent<CharacterController>().enabled = enabled;
-            particleReset.Play();
             resetSound.Play();
+            RpcPlayParticle();
         }
+    }
+
+    [ClientRpc]
+    public void RpcPlayParticle()
+    {
+        particleReset.Play();      
     }
 }
