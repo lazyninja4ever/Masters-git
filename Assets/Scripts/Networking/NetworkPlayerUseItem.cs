@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NetworkPlayerUseItem : NetworkBehaviour
 {
-    public GameObject leftHand;
-    public GameObject rightHand;
+
     public NetworkPlayerInteract interactionScript;
     public GameObject dropPoint;
-    GameObject usedHand;
+    public GameObject usedHand;
+
+    public Image itemImage;
+    public Sprite noItemSprite;
+
+    public bool hasItem;
     
 
     //called from NetworkPlayerInteract when f is pressed
@@ -22,16 +27,17 @@ public class NetworkPlayerUseItem : NetworkBehaviour
             NetworkIdentity itemId = usedItem.GetComponent<NetworkIdentity>();
             if (!usedItem.GetComponent<NetworkInteraction>().itemHeld) {
                 if (itemId != null && !itemId.hasAuthority) {
-                    if (CheckHands()) {
+                    if (!hasItem) {
                         if (SceneManager.GetActiveScene().name == "Puzzle10-geryon") {
                             CmdUseItem(usedItem);
                         }
-                        
-                        int hand = GetHand();
+
                         itemId.gameObject.GetComponent<AudioSource>().Play();
                         CmdClientRequest(itemId);
                         
-                        CmdInvokeSetup(usedItem, hand);
+                        CmdInvokeSetup(usedItem);
+                    }else if (hasItem) {
+                        interactionScript.InteractionActive("you cannot carry anymore items");
                     }
                 }
             }
@@ -42,11 +48,9 @@ public class NetworkPlayerUseItem : NetworkBehaviour
     }
 
     //called from NetworkPlayerInteract when mouse is clicked
-    public void UseHand(int hand, GameObject receiverItem) {
-        GameObject playerHand = GetHandObject(hand);
-        
-        if (playerHand.transform.childCount > 0) {
-            GameObject heldItem = playerHand.transform.GetChild(0).gameObject;
+    public void UseHand(GameObject receiverItem) {
+        if (hasItem) {
+            GameObject heldItem = usedHand.transform.GetChild(0).gameObject;
             if (heldItem.GetComponent<NetworkInteraction>().isPlaceable) {
                 if (!receiverItem.GetComponent<NetworkDependant>().isOccupied) {
                     CmdClientRemove(heldItem.GetComponent<NetworkIdentity>());
@@ -59,34 +63,6 @@ public class NetworkPlayerUseItem : NetworkBehaviour
     IEnumerator ChangeItemLayer(GameObject item, string layerName) {
         yield return new WaitForSeconds(2f);
         item.layer = LayerMask.NameToLayer(layerName);
-    }
-
-    //chech if hands are full, return true if hand is available
-    bool CheckHands() {
-        if (rightHand.transform.childCount > 0) {
-            if (leftHand.transform.childCount > 0) {
-                interactionScript.InteractionActive("your hands are full");
-                return false;
-            }
-        }
-        return true;
-    }
-
-    //return the first available hand, right, left
-    int GetHand() {
-        if (rightHand.transform.childCount > 0) {
-            return 2;
-        }
-        return 1;
-    }
-
-    GameObject GetHandObject(int hand) {
-        if (hand == 1) {
-            return rightHand;
-        }
-        else {
-            return leftHand;
-        }
     }
 
     [Command]
@@ -105,9 +81,9 @@ public class NetworkPlayerUseItem : NetworkBehaviour
     }
 
     [Command]
-    void CmdInvokeSetup(GameObject usedItem, int hand) {
+    void CmdInvokeSetup(GameObject usedItem) {
         if (!isServer) return;
-        RpcSetupItem(usedItem, hand);
+        RpcSetupItem(usedItem);
     }
 
     [Command]
@@ -133,9 +109,12 @@ public class NetworkPlayerUseItem : NetworkBehaviour
         heldItem.transform.parent = null;
         heldInter.holderItem = receiver;
 
+        itemImage.sprite = noItemSprite;
 
         heldInter.itemHeld = false;
         heldInter.isInItem = true;
+
+        hasItem = false;
 
         heldItem.transform.position = spawnPos;
         heldItem.transform.localRotation = spawnRot;
@@ -144,8 +123,7 @@ public class NetworkPlayerUseItem : NetworkBehaviour
 
     //this is when item is put in players hand
     [ClientRpc]
-    void RpcSetupItem(GameObject usedItem, int hand) {
-        GameObject usedHand = GetHandObject(hand);
+    void RpcSetupItem(GameObject usedItem) {
         NetworkInteraction usNI = usedItem.GetComponent<NetworkInteraction>();
         usNI.itemHeld = true;
         if (usNI.isInItem) {
@@ -154,6 +132,13 @@ public class NetworkPlayerUseItem : NetworkBehaviour
             usNI.holderItem.GetComponent<NetworkDependant>().isSolved = false;
             usNI.holderItem.GetComponent<NetworkDependant>().heldItem = null;
             usNI.holderItem = null;
+        }
+        hasItem = true;
+
+        if (isServer) {
+            itemImage.sprite = usNI.serverImage;
+        } else {
+            itemImage.sprite = usNI.clientImage;
         }
         
         Rigidbody itemRB = usedItem.GetComponent<Rigidbody>();

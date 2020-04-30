@@ -78,16 +78,10 @@ public class PlayerMovement : MonoBehaviour
             //check which surface the player is on
             
         }
-        else if(hasBow/*bowStateScript.GetComponent<BowState>().hasBow == true*/)
-        {
-            if(bowStateScript.GetComponent<BowState>().isShooting == true)
-            {
+        else if(hasBow && bowStateScript.GetComponent<BowState>().isShooting == true) {
                 //shoot
                 playerAnim.Play("Bow");
-            }
-        }
-        else
-        {
+        }else {
             playerAnim.Play("Idle_002");
             wasStopped = true;
             playerSoundScript.CmdStopMovementSound();

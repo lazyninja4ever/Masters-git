@@ -836,6 +836,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 9e6817a0c2be500478e784ba17584d9a, type: 3}
+  clientImage: {fileID: 21300000, guid: 9c6086ee38dc1bd4f899661f6a445fde, type: 3}
   clueSize: 2
   highLighter: {fileID: 271608841}
 --- !u!114 &57815934
@@ -3853,6 +3855,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2982202647875383029, guid: b75c213eaa2d9344a897bbe07efbb511,
+        type: 3}
+      propertyPath: sceneId
+      value: 1732903085
+      objectReference: {fileID: 0}
     - target: {fileID: 2982202647875383028, guid: b75c213eaa2d9344a897bbe07efbb511,
         type: 3}
       propertyPath: ShapeModule.radius.value
@@ -3862,11 +3869,6 @@ PrefabInstance:
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2982202647875383029, guid: b75c213eaa2d9344a897bbe07efbb511,
-        type: 3}
-      propertyPath: sceneId
-      value: 1732903085
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2982202647875383026, guid: b75c213eaa2d9344a897bbe07efbb511, type: 3}
@@ -12502,8 +12504,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -12532,6 +12534,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 27764b6896cebf24690a81b380f9843f, type: 3}
+  clientImage: {fileID: 21300000, guid: 27764b6896cebf24690a81b380f9843f, type: 3}
   clueSize: 2
   highLighter: {fileID: 18917804}
 --- !u!1 &740348577
@@ -13496,6 +13500,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 8f8f79c464d18f6418628804cbd11c72, type: 3}
+  clientImage: {fileID: 21300000, guid: 48fe644aac3fc184b9c3a24a64c974e2, type: 3}
   clueSize: 1
   highLighter: {fileID: 271608841}
 --- !u!114 &942436479
@@ -18091,6 +18097,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hideScript: {fileID: 1391923044}
   priceSound: {fileID: 1391923045}
 --- !u!114 &1391923044
@@ -19729,6 +19737,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 3af2360a23a7bdb49b5c27340f854cc9, type: 3}
+  clientImage: {fileID: 21300000, guid: 869fc71ebc39fa543b6a3c48907352e4, type: 3}
   clueSize: 3
   highLighter: {fileID: 271608841}
 --- !u!114 &1506313204
@@ -20074,6 +20084,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 1f7337c16edfe624a9c5587e443a1739, type: 3}
+  clientImage: {fileID: 21300000, guid: 5a1b7eae82620774ba87db93d230f319, type: 3}
   clueSize: 1
   highLighter: {fileID: 271608841}
 --- !u!114 &1521557636
@@ -21092,6 +21104,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: b47ba6e275a334d4dbcb79ee4837b5c3, type: 3}
+  clientImage: {fileID: 21300000, guid: 2104fca844e11424d97bda60b59e53f4, type: 3}
   clueSize: 2
   highLighter: {fileID: 271608841}
 --- !u!114 &1563226918
@@ -22795,6 +22809,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 09bd6286ac35b5a42b171f20a4c28660, type: 3}
+  clientImage: {fileID: 21300000, guid: 09bd6286ac35b5a42b171f20a4c28660, type: 3}
   clueSize: 2
   highLighter: {fileID: 18917804}
 --- !u!114 &1801232638
@@ -22947,8 +22963,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -22996,6 +23012,8 @@ MonoBehaviour:
   pickupOffsetX: 0.24
   pickupOffsetY: -2.73
   pickupOffsetZ: 1.42
+  serverImage: {fileID: 21300000, guid: 3002cf7fce6501544ad3e8c093ec8c1c, type: 3}
+  clientImage: {fileID: 21300000, guid: 05fa9dc005044ef4bac9f4574de85593, type: 3}
   clueSize: 2
   highLighter: {fileID: 271608841}
 --- !u!114 &1802100771
@@ -26569,6 +26587,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 6a236c2f08315d842a4190d0b7baaa1e, type: 3}
+  clientImage: {fileID: 21300000, guid: a9f7e352900dd0d4caef041bce9137a2, type: 3}
   clueSize: 3
   highLighter: {fileID: 271608841}
 --- !u!114 &2127370305

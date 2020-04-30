@@ -468,6 +468,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -643,6 +645,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -1618,6 +1622,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -2023,6 +2029,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: d1d45af5654888d41a24c99266f85aa7, type: 3}
+  clientImage: {fileID: 21300000, guid: d1d45af5654888d41a24c99266f85aa7, type: 3}
 --- !u!114 &102401818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5593,6 +5601,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: c2fca97a540fcdf4b81309c6a1341eb1, type: 3}
+  clientImage: {fileID: 21300000, guid: c2fca97a540fcdf4b81309c6a1341eb1, type: 3}
 --- !u!114 &274836477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6161,6 +6171,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -6575,6 +6587,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -7848,6 +7862,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -8462,6 +8478,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -9651,6 +9669,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: f3ddac49ce9eee74283bf817c420828c, type: 3}
+  clientImage: {fileID: 21300000, guid: f3ddac49ce9eee74283bf817c420828c, type: 3}
 --- !u!114 &546452365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15634,6 +15654,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -15930,6 +15952,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -17121,6 +17145,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -18063,6 +18089,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -20717,6 +20745,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hideScript: {fileID: 962093797}
   priceSound: {fileID: 962093800}
 --- !u!114 &962093795
@@ -21021,6 +21051,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -26053,6 +26085,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -26945,6 +26979,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -29164,6 +29200,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -30282,6 +30320,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -44045,6 +44085,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -44315,6 +44357,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -44620,6 +44664,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -44941,8 +44987,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505027832}
-  m_LocalRotation: {x: 0.33891845, y: 0.025397593, z: 0.00915293, w: -0.9404284}
-  m_LocalPosition: {x: 196.70898, y: -86.48754, z: 68.92739}
+  m_LocalRotation: {x: -0.22735879, y: 0.4149366, z: 0.10789875, w: 0.8743532}
+  m_LocalPosition: {x: 118.15638, y: -39.173843, z: 39.88695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45501,6 +45547,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -45939,6 +45987,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -48893,6 +48943,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -49107,6 +49159,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -49627,6 +49681,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -50314,6 +50370,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -50916,6 +50974,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -53658,6 +53718,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: f5788b00992bc034586d05d0d8fa9a03, type: 3}
+  clientImage: {fileID: 21300000, guid: f5788b00992bc034586d05d0d8fa9a03, type: 3}
 --- !u!114 &2042772890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54372,6 +54434,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -54542,6 +54606,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -54907,6 +54973,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -55089,6 +55157,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   hasOther: 0
   otherPipe: {fileID: 0}
   from: {x: 0, y: 0, z: 0, w: 0}
@@ -55860,6 +55930,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: a3274d079b77aff4c8189531fbccc584, type: 3}
+  clientImage: {fileID: 21300000, guid: a3274d079b77aff4c8189531fbccc584, type: 3}
 --- !u!114 &772275728154155809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56933,6 +57005,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 7f24a74a9bc9fe84aa7640719e2c572f, type: 3}
+  clientImage: {fileID: 21300000, guid: 7f24a74a9bc9fe84aa7640719e2c572f, type: 3}
 --- !u!114 &8166818954928929855
 MonoBehaviour:
   m_ObjectHideFlags: 0

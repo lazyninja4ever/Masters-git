@@ -20,6 +20,9 @@ public class NetworkInteraction : NetworkBehaviour //changed from monobehaviour
     public float pickupOffsetY;
     public float pickupOffsetZ;
 
+    public Sprite serverImage;
+    public Sprite clientImage;
+
 
     public virtual void InterActionFuntion(GameObject player) {
 

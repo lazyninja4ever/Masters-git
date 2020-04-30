@@ -2080,6 +2080,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   scaffSolutionScript: {fileID: 440312820}
@@ -2534,6 +2536,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: -2
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 39f8073ad25dc00439a20326855b2b59, type: 3}
+  clientImage: {fileID: 21300000, guid: 39f8073ad25dc00439a20326855b2b59, type: 3}
   bow: {fileID: 0}
   player: {fileID: 0}
   cameraObj: {fileID: 0}
@@ -7842,6 +7846,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   price: {fileID: 531676748}
   inInventory: 0
   collectPriceSound: {fileID: 531676751}
@@ -30240,8 +30246,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243427457}
-  m_LocalRotation: {x: -0.41396934, y: 0.36874276, z: 0.19102891, w: 0.81004083}
-  m_LocalPosition: {x: 234.4292, y: -249.18805, z: -212.08452}
+  m_LocalRotation: {x: -0.08947572, y: 0.56424165, z: 0.061693143, w: 0.81842494}
+  m_LocalPosition: {x: 224.6666, y: -230.40372, z: -207.0314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30722,6 +30728,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   scaffSolutionScript: {fileID: 440312820}
@@ -37118,6 +37126,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   scaffSolutionScript: {fileID: 440312820}
@@ -47115,6 +47125,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: -2
   pickupOffsetZ: 0
+  serverImage: {fileID: 21300000, guid: 39f8073ad25dc00439a20326855b2b59, type: 3}
+  clientImage: {fileID: 21300000, guid: 39f8073ad25dc00439a20326855b2b59, type: 3}
   bow: {fileID: 0}
   player: {fileID: 0}
   cameraObj: {fileID: 0}
@@ -56518,6 +56530,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -56611,6 +56625,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -56676,6 +56692,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -56755,6 +56773,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -56834,6 +56854,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -56913,6 +56935,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -56992,6 +57016,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -57071,6 +57097,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isRotating: 0
   currentAngle: 0
   solutionScript: {fileID: 2082888096}
@@ -69743,6 +69771,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   playSound: {fileID: 8296172667444168438}
   soundNumber: 3
   musicSolutionScript: {fileID: 2082888096}
@@ -69903,6 +69933,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   playSound: {fileID: 8296172667816516101}
   soundNumber: 2
   musicSolutionScript: {fileID: 2082888096}
@@ -70063,6 +70095,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   playSound: {fileID: 8296172668215127067}
   soundNumber: 1
   musicSolutionScript: {fileID: 2082888096}
@@ -70238,6 +70272,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   playSound: {fileID: 8296172668482884758}
   soundNumber: 4
   musicSolutionScript: {fileID: 2082888096}
@@ -70398,6 +70434,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   playSound: {fileID: 8296172668762525097}
   soundNumber: 6
   musicSolutionScript: {fileID: 2082888096}
@@ -70558,6 +70596,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   playSound: {fileID: 8296172668845482430}
   soundNumber: 5
   musicSolutionScript: {fileID: 2082888096}

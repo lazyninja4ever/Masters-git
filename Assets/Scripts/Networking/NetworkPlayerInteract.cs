@@ -70,20 +70,17 @@ public class NetworkPlayerInteract : MonoBehaviour {
         }
 
         if (Input.GetMouseButtonDown(0)) {
-            UseItem(2);
-        }
-        if (Input.GetMouseButtonDown(1)) {
-            UseItem(1);
+            UseItem();
         }
 
     }
 
-    void UseItem(int hand) {
+    void UseItem() {
 
         if (Physics.Raycast(transform.position, fwd, out hit, viewDistance, layerMaskDependent.value)) {
             if (hit.collider.CompareTag("Dependent")) {
                 raycastedObj = hit.collider.gameObject;
-                userItemScript.UseHand(hand, raycastedObj);
+                userItemScript.UseHand(raycastedObj);
             }
         }
     }
