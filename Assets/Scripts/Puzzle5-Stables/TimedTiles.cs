@@ -6,6 +6,11 @@ using Mirror;
 public class TimedTiles : HandleButtonInteract
 {
     public NetworkSolutionChecker solutionChecker;
+    public GameObject tile;
+    public GameObject twinTile;
+    public GameObject tileWater;
+    public GameObject twintileWater;
+    public AudioSource tileDownSound;
 
     public override void InterActionFuntion(GameObject player)
     {
@@ -28,6 +33,11 @@ public class TimedTiles : HandleButtonInteract
         isOn = true;
         isSolved = true;
         solutionChecker.PuzzleState();
+        tile.GetComponent<Renderer>().enabled = false;
+        twinTile.GetComponent<Renderer>().enabled = false;
+        tileWater.GetComponent<Renderer>().enabled = false;
+        twintileWater.GetComponent<Renderer>().enabled = false;
+        tileDownSound.Play();
     }
 
     [ClientRpc]
@@ -37,6 +47,9 @@ public class TimedTiles : HandleButtonInteract
         {
             isOn = false;
             isSolved = false;
+            tile.GetComponent<Renderer>().enabled = true;
+            twinTile.GetComponent<Renderer>().enabled = true;
+            tileDownSound.Play();
         }
     }
 }

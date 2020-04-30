@@ -132,15 +132,15 @@ public class SolutionCheckerHandles : NetworkReveiler
         {
             if (tilesMessage[i].GetComponent<TileState>().isSingle == true)
             {
-                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = "F to interact";
+                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = "E to interact";
             }
             if (tilesMessage[i].GetComponent<TileState>().isPopOthers == true)
             {
-                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = "F to interact";
+                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = "E to interact";
             }
             else if (tilesMessage[i].GetComponent<TileState>().isTimer == true)
             {
-                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = "F to interact";
+                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = "E to interact";
             }
         }
     }

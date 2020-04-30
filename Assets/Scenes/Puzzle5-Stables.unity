@@ -382,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -396,6 +396,11 @@ MonoBehaviour:
   isOn: 0
   isSolved: 0
   solutionChecker: {fileID: 1004537506}
+  tile: {fileID: 20469437}
+  twinTile: {fileID: 1943847586}
+  tileWater: {fileID: 946770071}
+  twintileWater: {fileID: 430219484}
+  tileDownSound: {fileID: 20469442}
 --- !u!4 &20469440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7f484dab70a383b43a5b210bfaf4dc67,
@@ -8678,6 +8683,11 @@ MonoBehaviour:
   isOn: 0
   isSolved: 0
   solutionChecker: {fileID: 1946526099}
+  tile: {fileID: 337112713}
+  twinTile: {fileID: 1823028235}
+  tileWater: {fileID: 1833462278}
+  twintileWater: {fileID: 92211044}
+  tileDownSound: {fileID: 337112718}
 --- !u!82 &337112718
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9601,7 +9611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -10826,8 +10836,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458395797}
-  m_LocalRotation: {x: 0.2831329, y: 0.35946274, z: 0.113325566, w: -0.8819182}
-  m_LocalPosition: {x: 131.3418, y: -428.72885, z: -252.57802}
+  m_LocalRotation: {x: -0.26747704, y: 0.022853572, z: 0.008345162, w: 0.9632571}
+  m_LocalPosition: {x: -135.66583, y: -216.09496, z: -33.351112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18892,7 +18902,6 @@ MonoBehaviour:
   syncInterval: 0.1
   solutionItems:
   - {fileID: 5487455896069272638}
-  - {fileID: 5487455894858145538}
   solvedRun: {fileID: 1095743474}
 --- !u!114 &1095743476
 MonoBehaviour:
@@ -31000,6 +31009,11 @@ MonoBehaviour:
   isOn: 0
   isSolved: 0
   solutionChecker: {fileID: 1946526099}
+  tile: {fileID: 1823028235}
+  twinTile: {fileID: 337112713}
+  tileWater: {fileID: 92211044}
+  twintileWater: {fileID: 1833462278}
+  tileDownSound: {fileID: 1823028241}
 --- !u!114 &1823028240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32480,7 +32494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -32494,6 +32508,11 @@ MonoBehaviour:
   isOn: 0
   isSolved: 0
   solutionChecker: {fileID: 1004537506}
+  tile: {fileID: 1943847586}
+  twinTile: {fileID: 20469437}
+  tileWater: {fileID: 946770071}
+  twintileWater: {fileID: 430219484}
+  tileDownSound: {fileID: 1943847591}
 --- !u!64 &1944124131
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34029,7 +34048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
