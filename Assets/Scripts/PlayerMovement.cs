@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+    public RaycastHit groundHit;
+    public bool newSurface;
+    public string surfaceTagOld;
+    public bool wasStopped;
 
     public Text playerText;
     public Text playerSubText;
@@ -29,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator playerAnim;
 
     public bool hasBow = false;
+
+    public PlayerMovementSound playerSoundScript;
 
     private void Awake() {
         portalScript = GameObject.Find("Portal").GetComponent<SceneIntro>();
@@ -67,7 +73,11 @@ public class PlayerMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         if (x != 0f || z != 0f) {
+            Debug.Log("am moving");
             playerAnim.Play("Run_002");
+            PlayerSoundCheck();
+            //check which surface the player is on
+            
         }
         else if(hasBow/*bowStateScript.GetComponent<BowState>().hasBow == true*/)
         {
@@ -80,6 +90,8 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             playerAnim.Play("Idle_002");
+            wasStopped = true;
+            playerSoundScript.CmdStopMovementSound();
         }
 
         Vector3 move = transform.right * x + transform.forward * z;
@@ -95,5 +107,24 @@ public class PlayerMovement : MonoBehaviour
     {
         playerAnim.Play("Bow");
 
+    }
+
+    void PlayerSoundCheck() {
+        if (Physics.Raycast(transform.localPosition - new Vector3(0, -2, 1), Vector3.down, out groundHit, 20, groundMask.value)) {
+            string floortag = groundHit.collider.gameObject.tag;
+            Debug.Log(floortag);
+            if (floortag == surfaceTagOld && !wasStopped) return;
+            if (floortag == "hard") {
+                //play concrete sound code
+                surfaceTagOld = "hard";
+                playerSoundScript.CmdPlayerMovementSound(1);
+            }
+            else if (floortag == "soft") {
+                //play Water sound code
+                surfaceTagOld = "soft";
+                playerSoundScript.CmdPlayerMovementSound(0);
+            }
+            wasStopped = false;
+        }
     }
 }
