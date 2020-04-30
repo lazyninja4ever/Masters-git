@@ -93,6 +93,7 @@ public class WaterStateR : NetworkBehaviour
         {
             if (!isServer) return;
             RpcEndPuzzle();
+            solutionScript.RpcHideMessage();
         }
         Debug.Log("updated tiles");
         update = false;

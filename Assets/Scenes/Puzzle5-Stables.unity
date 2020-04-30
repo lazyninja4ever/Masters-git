@@ -18904,6 +18904,7 @@ MonoBehaviour:
   syncInterval: 0.1
   solutionItems:
   - {fileID: 5487455896069272638}
+  - {fileID: 5487455894858145538}
   solvedRun: {fileID: 1095743474}
 --- !u!114 &1095743476
 MonoBehaviour:
@@ -54116,7 +54117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F TO USE
+  InteractMsg: E TO USE
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -54228,7 +54229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F TO USE
+  InteractMsg: E TO USE
   itemType: 0
   itemHeld: 0
   isInItem: 0
