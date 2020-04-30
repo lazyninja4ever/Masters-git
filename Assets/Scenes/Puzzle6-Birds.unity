@@ -2069,7 +2069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -2523,7 +2523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to collect
+  InteractMsg: E to collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -7831,7 +7831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to collect
+  InteractMsg: E to collect
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -30240,8 +30240,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243427457}
-  m_LocalRotation: {x: -0.3157423, y: 0.28585464, z: 0.102572024, w: 0.89892876}
-  m_LocalPosition: {x: 245.39029, y: -296.29846, z: -184.89914}
+  m_LocalRotation: {x: -0.41396934, y: 0.36874276, z: 0.19102891, w: 0.81004083}
+  m_LocalPosition: {x: 234.4292, y: -249.18805, z: -212.08452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30711,7 +30711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -37107,7 +37107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -47104,7 +47104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to Collect
+  InteractMsg: E to Collect
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -56507,7 +56507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56600,7 +56600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56665,7 +56665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56744,7 +56744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56823,7 +56823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56902,7 +56902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56981,7 +56981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -57060,7 +57060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -69732,7 +69732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -69892,7 +69892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70052,7 +70052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70227,7 +70227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70387,7 +70387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70547,7 +70547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: F to interact
+  InteractMsg: E to interact
   itemType: 0
   itemHeld: 0
   isInItem: 0

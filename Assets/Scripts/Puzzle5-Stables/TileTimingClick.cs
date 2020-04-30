@@ -32,7 +32,6 @@ public class TileTimingClick : NetworkReveiler
         {
             RpcNoWater();
         }
-        brickSound.Play();
     }
 
     public void UpdateTiles()
