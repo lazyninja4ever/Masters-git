@@ -27,7 +27,7 @@ public class WaterStateR : NetworkBehaviour
     {
         finalWaterTile.GetComponent<Renderer>().enabled = false;
     }
-/*
+
     public void Update()
     {
         if(update == true)
@@ -36,7 +36,7 @@ public class WaterStateR : NetworkBehaviour
             RpcUpdateWaterTiles();
         }
     }
-*/
+
     [ClientRpc]
     public void RpcUpdateWaterTiles()
     {
