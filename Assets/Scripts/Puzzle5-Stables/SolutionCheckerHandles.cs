@@ -25,6 +25,14 @@ public class SolutionCheckerHandles : NetworkReveiler
     public AudioSource waterDropR;
     public AudioSource fenceSound;
     public Animator anim;
+    public GameObject[] tilesMessage;
+
+    private void Start()
+    {
+        if (!isServer) return;
+        RpcHideMessage();
+    }
+
 
     public override void ReveilPrice()
     {
@@ -33,10 +41,12 @@ public class SolutionCheckerHandles : NetworkReveiler
         if (fenceIsShown == false)
         {
             RpcReveil();
+            RpcShowMessage();
         }
         else if (fenceIsShown == true)
         {
             RpcHide();
+            RpcHideMessage();
         }
     }
 
@@ -47,7 +57,7 @@ public class SolutionCheckerHandles : NetworkReveiler
         fountainStreamLShow.moveToPosition();
         waterTileLShow.moveToPosition();
         waterTileRShow.moveToPosition();
-        fenceShow.moveToPosition();
+    //    fenceShow.moveToPosition();
         fenceIsShown = true;
         anim.Play("FenceUp");
         fenceSound.Play();
@@ -63,7 +73,7 @@ public class SolutionCheckerHandles : NetworkReveiler
     [ClientRpc]
     void RpcHide()
     {
-        fenceHide.moveToPosition();
+    //    fenceHide.moveToPosition();
         fenceIsShown = false;
         anim.Play("FenceDown");
         fenceSound.Play();
@@ -78,5 +88,46 @@ public class SolutionCheckerHandles : NetworkReveiler
         waterRight.Stop();
         waterDropL.Play();
         waterDropR.Play();
+    }
+
+
+    [ClientRpc]
+    public void RpcHideMessage()
+    {
+        for (int i = 0; i < tilesMessage.Length; i++)
+        {
+            if (tilesMessage[i].GetComponent<TileState>().isSingle == true)
+            {
+                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = "";
+            }
+            if (tilesMessage[i].GetComponent<TileState>().isPopOthers == true)
+            {
+                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = "";
+            }
+            else if (tilesMessage[i].GetComponent<TileState>().isTimer == true)
+            {
+                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = "";
+            }
+        }
+    }
+
+    [ClientRpc]
+    public void RpcShowMessage()
+    {
+        for (int i = 0; i < tilesMessage.Length; i++)
+        {
+            if (tilesMessage[i].GetComponent<TileState>().isSingle == true)
+            {
+                tilesMessage[i].GetComponent<TileSingleClick>().InteractMsg = "F to interact";
+            }
+            if (tilesMessage[i].GetComponent<TileState>().isPopOthers == true)
+            {
+                tilesMessage[i].GetComponent<TilePopOtherClick>().InteractMsg = "F to interact";
+            }
+            else if (tilesMessage[i].GetComponent<TileState>().isTimer == true)
+            {
+                tilesMessage[i].GetComponent<TimedTiles>().InteractMsg = "F to interact";
+            }
+        }
     }
 }
