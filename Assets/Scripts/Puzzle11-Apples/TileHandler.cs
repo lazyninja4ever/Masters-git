@@ -65,7 +65,6 @@ public class TileHandler : NetworkBehaviour
                 currentColor = ColorPath[colorPathIncrease];
             }
             else {
-                fireSound.Play();
                 RpcPlayResetAnimations();
                 resetPositionScript.Invoke("ResetPosition", 0.2f);
                 Invoke("ResetBoard", 0.2f);
@@ -79,7 +78,6 @@ public class TileHandler : NetworkBehaviour
     [ClientRpc]
     public void RpcPlayResetAnimations()
     {
-      //  fireSound.Play();
         fireL1.Play();
         fireL2.Play();
         fireL3.Play();
@@ -88,6 +86,7 @@ public class TileHandler : NetworkBehaviour
         fireR2.Play();
         fireR3.Play();
         fireR4.Play();
+        fireSound.Play();
     }
 
     [ClientRpc]
