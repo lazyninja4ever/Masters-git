@@ -10826,8 +10826,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458395797}
-  m_LocalRotation: {x: 0.52597386, y: 0.27988434, z: 0.18614492, w: -0.7812595}
-  m_LocalPosition: {x: -142.78802, y: -238.77985, z: -69.62726}
+  m_LocalRotation: {x: -0.25523582, y: 0.0690181, z: 0.020072883, w: 0.9642035}
+  m_LocalPosition: {x: -166.36195, y: -234.23152, z: -83.721634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18966,6 +18966,7 @@ MonoBehaviour:
   syncInterval: 0.1
   solutionItems:
   - {fileID: 5487455896069272638}
+  - {fileID: 5487455894858145538}
   solvedRun: {fileID: 1095743474}
 --- !u!114 &1095743476
 MonoBehaviour:
