@@ -9,6 +9,9 @@ public class IsLocalScriptDisabler : NetworkBehaviour
     public GameObject playerCamera; //changed from gameobject
     public MouseLook lookScript; // added
     public GameObject[] characterParts;
+    public SkinnedMeshRenderer playerMesh;
+    public Mesh decapMesh;
+    public Material hidingMaterial; 
 
 
     private void Start() {
@@ -20,8 +23,10 @@ public class IsLocalScriptDisabler : NetworkBehaviour
             
         }
         if (isLocalPlayer) {
+            playerMesh.GetComponent<SkinnedMeshRenderer>().sharedMesh = decapMesh;
             foreach (GameObject part in characterParts) {
-                part.layer = LayerMask.NameToLayer("PlayerCharacter");
+                part.GetComponent<SkinnedMeshRenderer>().material = hidingMaterial;
+                //part.layer = LayerMask.NameToLayer("PlayerCharacter");
             }
         }
     }
