@@ -15,9 +15,13 @@ public class NetworkPlayerUseItem : NetworkBehaviour
     public Image itemImage;
     public Sprite noItemSprite;
 
-    public bool hasItem;
-    
+    public Text carryText;
 
+    public bool hasItem;
+
+    private void Start() {
+        carryText.enabled = false;
+    }
     //called from NetworkPlayerInteract when f is pressed
     public void UseItem(GameObject usedItem) {
         if (!usedItem.GetComponent<NetworkInteraction>().itemType) {
@@ -37,7 +41,8 @@ public class NetworkPlayerUseItem : NetworkBehaviour
                         
                         CmdInvokeSetup(usedItem);
                     }else if (hasItem) {
-                        interactionScript.InteractionActive("you cannot carry anymore items");
+                        CarryOverloadActive("you cannot carry anymore items");
+                        Invoke("CarryOverloadInactive", 2.5f);
                     }
                 }
             }
@@ -58,6 +63,18 @@ public class NetworkPlayerUseItem : NetworkBehaviour
                 }
             } 
         }
+    }
+
+    public void CarryOverloadActive(string msg) {
+        carryText.text = msg;
+        carryText.enabled = true;
+        //crosshair.enabled = false;
+    }
+
+    public void CarryOverloadInactive() {
+
+        carryText.enabled = false;
+        //crosshair.enabled = true;
     }
 
     IEnumerator ChangeItemLayer(GameObject item, string layerName) {

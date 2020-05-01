@@ -64912,7 +64912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to take
+  InteractMsg: E to collect
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -64923,6 +64923,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   apple: {fileID: 1664319830}
   inInventory: 0
   collectPriceSound: {fileID: 1594899260}
@@ -94956,7 +94958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E TO USE
+  InteractMsg: E TO pull
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -94967,6 +94969,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isOn: 0
   isSolved: 0
   handleSound: {fileID: 5487455896767076594}
@@ -95031,7 +95035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E TO USE
+  InteractMsg: E TO pull
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -95042,6 +95046,8 @@ MonoBehaviour:
   pickupOffsetX: 0
   pickupOffsetY: 0
   pickupOffsetZ: 0
+  serverImage: {fileID: 0}
+  clientImage: {fileID: 0}
   isOn: 0
   isSolved: 0
   handleSound: {fileID: 5487455895582330745}

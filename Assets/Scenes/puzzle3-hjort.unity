@@ -2018,7 +2018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: e to collect
+  InteractMsg: e to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 0
@@ -5590,7 +5590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: e to collect
+  InteractMsg: e to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 0
@@ -9658,7 +9658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: e to collect
+  InteractMsg: e to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 0
@@ -44987,8 +44987,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505027832}
-  m_LocalRotation: {x: -0.22735879, y: 0.4149366, z: 0.10789875, w: 0.8743532}
-  m_LocalPosition: {x: 118.15638, y: -39.173843, z: 39.88695}
+  m_LocalRotation: {x: 0.02496907, y: 0.9586192, z: 0.088824116, w: -0.26932538}
+  m_LocalPosition: {x: 168.20851, y: -98.110504, z: 90.55748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53707,7 +53707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: e to collect
+  InteractMsg: e to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 0
@@ -55919,7 +55919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: e to collect
+  InteractMsg: e to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 0
@@ -56994,7 +56994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: e to collect
+  InteractMsg: e to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 0

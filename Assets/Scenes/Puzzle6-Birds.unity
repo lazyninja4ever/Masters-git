@@ -2069,7 +2069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -2283,11 +2283,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 7965172976191212111, guid: d45461e3bf883314588f6247b85de062,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8b6c07a3df02c12429936b5ff7a032b8, type: 2}
     - target: {fileID: 1118613268309813, guid: d45461e3bf883314588f6247b85de062, type: 3}
       propertyPath: m_LocalPosition.x
       value: 245.11
@@ -2344,6 +2339,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7965172976191212111, guid: d45461e3bf883314588f6247b85de062,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b6c07a3df02c12429936b5ff7a032b8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d45461e3bf883314588f6247b85de062, type: 3}
 --- !u!1 &143856852 stripped
@@ -2525,7 +2525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to collect
+  InteractMsg: E to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -5214,6 +5214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00daa5681e1de4ddea38e33dec581c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   currentPos: {fileID: 0}
   goToPos: {fileID: 1248441946}
   particleReset: {fileID: 554541291}
@@ -30246,8 +30248,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243427457}
-  m_LocalRotation: {x: -0.08947572, y: 0.56424165, z: 0.061693143, w: 0.81842494}
-  m_LocalPosition: {x: 224.6666, y: -230.40372, z: -207.0314}
+  m_LocalRotation: {x: -0.18583892, y: 0.3837394, z: 0.079166874, w: 0.90107745}
+  m_LocalPosition: {x: 127.685326, y: -299.60876, z: -313.65143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30717,7 +30719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -37115,7 +37117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -47031,11 +47033,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 7965172976191212111, guid: d45461e3bf883314588f6247b85de062,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8b6c07a3df02c12429936b5ff7a032b8, type: 2}
     - target: {fileID: 1118613268309813, guid: d45461e3bf883314588f6247b85de062, type: 3}
       propertyPath: m_LocalPosition.x
       value: 244.35
@@ -47092,6 +47089,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7965172976191212111, guid: d45461e3bf883314588f6247b85de062,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b6c07a3df02c12429936b5ff7a032b8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d45461e3bf883314588f6247b85de062, type: 3}
 --- !u!1 &1914554881 stripped
@@ -47114,7 +47116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to Collect
+  InteractMsg: E to pick up
   itemType: 1
   itemHeld: 0
   isInItem: 1
@@ -56519,7 +56521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56614,7 +56616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56681,7 +56683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56762,7 +56764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56843,7 +56845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -56924,7 +56926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -57005,7 +57007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -57086,7 +57088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to rotate
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -69760,7 +69762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to ring
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -69922,7 +69924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to ring
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70084,7 +70086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to ring
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70261,7 +70263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to ring
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70423,7 +70425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to ring
   itemType: 0
   itemHeld: 0
   isInItem: 0
@@ -70585,7 +70587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  InteractMsg: E to interact
+  InteractMsg: E to ring
   itemType: 0
   itemHeld: 0
   isInItem: 0
